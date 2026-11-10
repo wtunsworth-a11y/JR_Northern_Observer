@@ -42,3 +42,9 @@ Set `"status": "review"` while an issue is in final review and list open items i
 Useful per-photo options: `"raw": True` uses the original photo when a headline is printed
 over it; `"caption": "…"` overrides the caption found under the photo, and `None` drops it.
 `"fixes"` on an article corrects text after extraction.
+
+## Single-file edition
+
+`python3 tools/package.py` writes `dist/northern-observer.html`: the whole site, data and
+photos in one HTML file (about 9 MB) that opens offline in any browser and can be shared
+as a file or hosted anywhere.
