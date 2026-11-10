@@ -1,0 +1,631 @@
+<title>Northern Observer</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@800;900&family=Berkshire+Swash&display=swap">
+<style>
+/* Layout: the print newsletter's furniture (masthead band, grey section bar, grey footer)
+   wrapped around a single reading column; each issue brings its own band and headline colours. */
+:root {
+  --paper: #f3f4f6;
+  --surface: #ffffff;
+  --ink: #1d2027;
+  --muted: #5d6270;
+  --rule: #d6d8de;
+  --section-bar: #d9dadd;
+  --section-ink: #2b3990;
+  --footer: #8c8c8f;
+  --footer-ink: #ffffff;
+  --chip: #e8eaf1;
+  --warn-bg: #fff5d6;
+  --warn-ink: #6b4b00;
+  --warn-rule: #e9c45a;
+  /* issue colours, replaced per issue from data */
+  --band: #28408f;
+  --strip: #6ccff6;
+  --head-l: #2b3990;
+  --head-d: #9eabff;
+  --accent-l: #1fa3dc;
+  --accent-d: #6ccff6;
+  --head: var(--head-l);
+  --accent: var(--accent-l);
+
+  --display: "Montserrat", "Arial Black", "Helvetica Neue", Arial, sans-serif;
+  --cond: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --text: "Barlow", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --swash: "Berkshire Swash", Georgia, "Times New Roman", serif;
+  --measure: 40rem;
+  --wide: 72rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #121419; --surface: #1b1e25; --ink: #e7e9ee; --muted: #a2a8b6; --rule: #2e333e;
+    --section-bar: #262a33; --section-ink: #c9d0ff; --footer: #3a3d44; --footer-ink: #e7e9ee;
+    --chip: #262a34; --warn-bg: #2f2812; --warn-ink: #f3d98c; --warn-rule: #7a6420;
+    --head: var(--head-d); --accent: var(--accent-d);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #121419; --surface: #1b1e25; --ink: #e7e9ee; --muted: #a2a8b6; --rule: #2e333e;
+  --section-bar: #262a33; --section-ink: #c9d0ff; --footer: #3a3d44; --footer-ink: #e7e9ee;
+  --chip: #262a34; --warn-bg: #2f2812; --warn-ink: #f3d98c; --warn-rule: #7a6420;
+  --head: var(--head-d); --accent: var(--accent-d);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font: 400 1.0625rem/1.6 var(--text);
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 10; background: var(--band);
+}
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.wrap {
+  max-width: var(--wide); margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+/* ---------- masthead ---------- */
+.masthead { background: var(--band); color: #fff; }
+.masthead .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 10px; }
+.masthead a.brand { display: block; flex: 0 1 26rem; min-width: 0; }
+.masthead a.brand img { width: 100%; height: auto; }
+.badge {
+  flex: 0 0 auto; background: var(--strip); color: var(--band);
+  font: 700 0.95rem/1.15 var(--cond); text-align: center; padding: 8px 12px;
+  border: 2px dotted rgba(255,255,255,.7); outline: 3px solid var(--strip);
+}
+.badge b { display: block; font-size: 1.15rem; }
+.strip { background: var(--strip); color: var(--band); }
+.strip .wrap {
+  font: 700 0.72rem/1 var(--cond); letter-spacing: .38em; text-transform: uppercase;
+  padding-block: 7px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.navbar { background: var(--surface); border-bottom: 1px solid var(--rule); position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; }
+.navbar .wrap { display: flex; gap: 4px 18px; flex-wrap: wrap; padding-block: 8px; font: 600 1rem/1.4 var(--cond); letter-spacing: .04em; text-transform: uppercase; }
+.navbar a { text-decoration: none; color: var(--muted); padding: 2px 0; border-bottom: 2px solid transparent; }
+.navbar a:hover, .navbar a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
+
+/* ---------- section bar (the grey band under each print page header) ---------- */
+.sectionbar { background: var(--section-bar); }
+.sectionbar .wrap { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding-block: 6px; flex-wrap: wrap; }
+.sectionbar .kicker { font: 500 1.45rem/1.2 var(--cond); color: var(--head); }
+.sectionbar .folio { font: 500 .85rem/1.3 var(--text); color: var(--muted); }
+
+main { padding-block: 24px 48px; min-height: 60vh; }
+h1, h2, h3 { text-wrap: balance; margin: 0; }
+.eyebrow { font: 700 .8rem/1.2 var(--cond); letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+.big-head {
+  font: 900 clamp(1.9rem, 5.2vw, 3.4rem)/1.0 var(--display); text-transform: uppercase;
+  color: var(--head); letter-spacing: -.01em;
+}
+.cond-head { font: 700 clamp(1.4rem, 3.4vw, 2rem)/1.05 var(--cond); text-transform: uppercase; color: var(--head); }
+.muted { color: var(--muted); }
+.pill { display: inline-block; font: 700 .72rem/1 var(--cond); letter-spacing: .12em; text-transform: uppercase; padding: 5px 8px; border-radius: 3px; }
+.pill.review { background: var(--warn-bg); color: var(--warn-ink); border: 1px solid var(--warn-rule); }
+.pill.printed { background: var(--chip); color: var(--muted); }
+
+/* ---------- home ---------- */
+.home-grid { display: grid; gap: 40px; }
+.search { display: flex; gap: 8px; max-width: 34rem; }
+.search input {
+  flex: 1; min-width: 0; font: 400 1rem/1.4 var(--text); padding: 10px 12px;
+  border: 1px solid var(--rule); border-radius: 4px; background: var(--surface); color: var(--ink);
+}
+.issues { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: 20px; }
+.issue-card {
+  display: grid; grid-template-columns: 7.5rem 1fr; gap: 14px; text-decoration: none;
+  background: var(--surface); border: 1px solid var(--rule); padding: 12px;
+}
+.issue-card:hover { border-color: var(--accent); }
+.issue-card img { width: 100%; height: auto; box-shadow: 0 1px 4px rgba(0,0,0,.18); }
+.issue-card .no { font: 900 1.6rem/1 var(--display); color: var(--head); }
+.issue-card .lead { font: 600 1.05rem/1.2 var(--cond); text-transform: uppercase; margin-top: 8px; }
+.issue-card > div { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  text-decoration: none; background: var(--chip); padding: 4px 10px; border-radius: 3px;
+  font: 600 .98rem/1.3 var(--cond); letter-spacing: .02em;
+}
+.chip:hover { background: var(--accent); color: #fff; }
+.chip .n { color: var(--muted); font-weight: 500; margin-left: 4px; font-variant-numeric: tabular-nums; }
+.chip:hover .n { color: inherit; }
+.block-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; border-bottom: 3px solid var(--head); padding-bottom: 6px; margin-bottom: 14px; flex-wrap: wrap; }
+.block-head h2 { font: 700 1.5rem/1.1 var(--cond); text-transform: uppercase; color: var(--head); }
+.block-head a { font: 600 .95rem/1 var(--cond); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+
+/* ---------- article lists ---------- */
+.list { display: grid; gap: 0; }
+.row {
+  display: grid; grid-template-columns: 8.5rem 1fr; gap: 16px; padding: 14px 0;
+  border-bottom: 1px solid var(--rule); text-decoration: none;
+}
+.row:first-child { padding-top: 4px; }
+.row .thumb { aspect-ratio: 4 / 3; background: var(--chip); overflow: hidden; }
+.row .thumb img { width: 100%; height: 100%; object-fit: cover; }
+.row > div { min-width: 0; }
+.row h3 { font: 700 1.25rem/1.08 var(--cond); text-transform: uppercase; color: var(--head); }
+.row:hover h3 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.row p { margin: 6px 0 4px; color: var(--ink); font-size: .95rem; line-height: 1.45;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.meta { font: 500 .85rem/1.3 var(--cond); letter-spacing: .04em; color: var(--muted); text-transform: uppercase; }
+.feature { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 22px; text-decoration: none; margin-bottom: 28px; }
+.feature img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+.feature > div { min-width: 0; display: flex; flex-direction: column; gap: 8px; justify-content: center; }
+.feature p { margin: 0; }
+.issue-top { display: grid; grid-template-columns: 9rem 1fr; gap: 22px; align-items: end; margin-bottom: 28px; }
+.issue-top img { width: 100%; height: auto; box-shadow: 0 2px 8px rgba(0,0,0,.2); }
+.issue-top > div { min-width: 0; display: grid; gap: 8px; }
+.sec-label {
+  background: var(--section-bar); color: var(--head); font: 500 1.3rem/1 var(--cond);
+  padding: 7px 10px; margin: 26px 0 4px;
+}
+.review {
+  background: var(--warn-bg); border: 1px solid var(--warn-rule); color: var(--warn-ink);
+  padding: 14px 16px; margin-bottom: 26px;
+}
+.review h2 { font: 700 1.15rem/1.2 var(--cond); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 6px; }
+.review ol { margin: 0; padding-left: 1.3rem; display: grid; gap: 6px; font-size: .95rem; line-height: 1.45; }
+
+/* ---------- article ---------- */
+.article { display: grid; gap: 22px; }
+.art-head { display: grid; gap: 12px; max-width: 56rem; }
+.art-head .sub { font: 700 clamp(1.15rem, 2.6vw, 1.6rem)/1.15 var(--display); color: var(--head); text-transform: uppercase; opacity: .85; }
+.art-head .byline { font: 600 1rem/1.3 var(--cond); text-transform: uppercase; letter-spacing: .04em; border-bottom: 1px solid var(--ink); padding-bottom: 4px; justify-self: start; }
+.figure { margin: 0; }
+.figure img { width: 100%; height: auto; cursor: zoom-in; background: var(--chip); }
+.figure figcaption, .gallery figcaption { font: 500 .9rem/1.35 var(--cond); color: var(--muted); margin-top: 6px; }
+.tri { color: var(--accent); font-size: .8em; margin-right: 5px; }
+.lead-figure { max-width: var(--wide); }
+.body { max-width: var(--measure); }
+.body > * + * { margin-top: 1em; }
+.body p { margin: 0; }
+.body .lede {
+  font: 700 1.2rem/1.42 var(--cond); padding-bottom: 14px; border-bottom: 1px solid var(--ink);
+}
+.dropcap::first-letter {
+  float: left; font: 400 4.1em/0.82 var(--swash); color: var(--accent);
+  padding: 0.06em 0.08em 0 0;
+}
+.body h2.sub-h { font: 700 1.3rem/1.2 var(--cond); text-transform: uppercase; color: var(--head); margin-top: 1.4em; }
+.body ul, .body ol { padding-left: 1.4rem; margin: 0; }
+.body ul li::marker { color: var(--accent); content: "■  "; font-size: .8em; }
+.body li + li { margin-top: .35em; }
+.body .figure { margin-block: 1.6em; }
+.sign { border-top: 1px solid var(--rule); padding-top: 10px; font: 700 1.05rem/1.3 var(--cond); }
+.sign span { display: block; font-weight: 500; color: var(--muted); }
+.gallery { margin-top: 2em; }
+.gallery h2 { font: 700 1.25rem/1.15 var(--cond); text-transform: uppercase; color: var(--head); border-bottom: 2px solid var(--accent); padding-bottom: 4px; margin-bottom: 10px; }
+.gallery .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr)); gap: 10px; }
+.gallery figure { margin: 0; min-width: 0; }
+.gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; cursor: zoom-in; background: var(--chip); }
+.gallery.portraits .grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 9.5rem), 1fr)); }
+.gallery.portraits img { aspect-ratio: 4 / 5; object-position: top; }
+.gallery.portraits figcaption b { display: block; color: var(--ink); text-transform: uppercase; }
+.notice img { max-width: 34rem; width: 100%; height: auto; border: 1px solid var(--rule); cursor: zoom-in; }
+.tags { display: grid; gap: 10px; max-width: var(--measure); border-top: 3px solid var(--head); padding-top: 14px; margin-top: 10px; }
+.tags .row-t { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.tags .lbl { font: 700 .8rem/1 var(--cond); letter-spacing: .16em; text-transform: uppercase; color: var(--muted); min-width: 4.8rem; }
+.pager { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: var(--wide); border-top: 1px solid var(--rule); padding-top: 16px; }
+.pager a { text-decoration: none; display: grid; gap: 4px; }
+.pager a.next { text-align: right; grid-column: 2; }
+.pager b { font: 700 1.1rem/1.1 var(--cond); text-transform: uppercase; color: var(--head); }
+.crumbs { font: 600 .95rem/1.3 var(--cond); text-transform: uppercase; letter-spacing: .05em; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; }
+.crumbs a { text-decoration: none; }
+.crumbs a:hover { color: var(--ink); text-decoration: underline; }
+
+/* ---------- a–z ---------- */
+.az { columns: 3 14rem; column-gap: 28px; }
+.az a { display: flex; justify-content: space-between; gap: 10px; break-inside: avoid; padding: 7px 0; border-bottom: 1px solid var(--rule); text-decoration: none; font: 600 1.1rem/1.2 var(--cond); }
+.az a:hover { color: var(--head); }
+.az .n { color: var(--muted); font-weight: 500; font-variant-numeric: tabular-nums; }
+
+/* ---------- credits ---------- */
+.credits { max-width: var(--measure); display: grid; gap: 28px; }
+.credits dl { display: grid; grid-template-columns: minmax(0, 11rem) minmax(0, 1fr); gap: 0; margin: 0; }
+.credits dt, .credits dd { margin: 0; padding: 9px 0; border-bottom: 1px solid var(--rule); }
+.credits dt { font: 700 .95rem/1.4 var(--cond); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.tbc { color: var(--warn-ink); background: var(--warn-bg); padding: 1px 6px; font-size: .9rem; }
+
+/* ---------- footer ---------- */
+footer.foot { background: var(--footer); color: var(--footer-ink); }
+footer.foot .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-block: 16px calc(16px + env(safe-area-inset-bottom, 0px)); font: 500 .8rem/1 var(--text); letter-spacing: .22em; text-transform: uppercase; }
+
+/* ---------- lightbox ---------- */
+.lightbox {
+  position: fixed; inset: 0; z-index: 20; background: rgba(8,10,14,.94); color: #fff;
+  display: grid; grid-template-rows: auto 1fr auto; padding:
+    calc(10px + env(safe-area-inset-top, 0px)) max(12px, env(safe-area-inset-right, 0px))
+    calc(14px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px));
+}
+.lightbox .bar { display: flex; justify-content: space-between; align-items: center; font: 600 .95rem/1 var(--cond); letter-spacing: .08em; }
+.lightbox button { font: 700 1rem/1 var(--cond); letter-spacing: .06em; text-transform: uppercase; background: rgba(255,255,255,.12); color: #fff; border: 0; padding: 10px 14px; border-radius: 4px; cursor: pointer; }
+.lightbox .stage { display: grid; place-items: center; min-height: 0; padding-block: 10px; }
+.lightbox img { max-height: 100%; max-width: 100%; object-fit: contain; cursor: default; }
+.lightbox .cap { max-width: 50rem; margin: 0 auto; text-align: center; font: 500 1rem/1.4 var(--cond); display: flex; gap: 12px; align-items: center; justify-content: center; }
+
+.loading { padding: 60px 0; text-align: center; color: var(--muted); font: 600 1.1rem/1 var(--cond); letter-spacing: .1em; text-transform: uppercase; }
+
+@media (max-width: 640px) {
+  body { font-size: 1.03rem; }
+  .masthead a.brand { flex-basis: 16rem; }
+  .badge { font-size: .8rem; padding: 5px 8px; }
+  .badge b { font-size: .95rem; }
+  .strip .wrap { letter-spacing: .22em; font-size: .62rem; }
+  .row { grid-template-columns: 6.2rem 1fr; gap: 12px; }
+  .row h3 { font-size: 1.1rem; }
+  .feature { grid-template-columns: 1fr; }
+  .issue-top { grid-template-columns: 6.5rem 1fr; gap: 14px; }
+  .issue-card { grid-template-columns: 6rem 1fr; }
+  .credits dl { grid-template-columns: 1fr; }
+  .credits dt { border-bottom: 0; padding-bottom: 0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  main { animation: rise .25s ease-out; }
+  @keyframes rise { from { transform: translateY(6px); } to { transform: none; } }
+}
+</style>
+
+<header>
+  <div class="masthead"><div class="wrap">
+    <a class="brand" href="#" aria-label="Northern Observer home"><img id="mast-img" alt="Northern Observer" width="1200" height="280"></a>
+    <div class="badge" id="badge" hidden></div>
+  </div></div>
+  <div class="strip"><div class="wrap">Oro Provincial Government | Monthly Newsletter</div></div>
+  <nav class="navbar" aria-label="Main"><div class="wrap">
+    <a href="#" data-nav="home">Issues</a>
+    <a href="#places" data-nav="places">Places</a>
+    <a href="#topics" data-nav="topics">Topics</a>
+    <a href="#credits" data-nav="credits">Credits</a>
+  </div></nav>
+  <div class="sectionbar" id="sectionbar" hidden><div class="wrap"><span class="kicker" id="kicker"></span><span class="folio" id="folio"></span></div></div>
+</header>
+
+<main id="main"><div class="wrap"><div class="loading">Loading the Northern Observer…</div></div></main>
+
+<footer class="foot"><div class="wrap"><span>www.opg.gov.pg</span><span>Oro Nius 2026</span></div></footer>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <div class="bar"><span id="lb-count"></span><button type="button" id="lb-close">Close</button></div>
+  <div class="stage"><img id="lb-img" alt=""></div>
+  <div class="cap"><button type="button" id="lb-prev" aria-label="Previous photo">‹</button><span id="lb-cap"></span><button type="button" id="lb-next" aria-label="Next photo">›</button></div>
+</div>
+
+<script>
+(() => {
+  const $ = (s, el = document) => el.querySelector(s);
+  const main = $("#main");
+  const state = { index: null, issues: {}, credits: null };
+  const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const md = s => esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  const slug = s => String(s).toLowerCase().normalize("NFKD").replace(/[^\w\s-]/g, "").replace(/[\s_]+/g, "-").replace(/-+/g, "-").replace(/^-|-$/g, "");
+  const plural = (n, w) => `${n} ${w}${n === 1 ? "" : "s"}`;
+  const pageList = p => !p || !p.length ? "" : (p.length === 1 ? `Page ${p[0]}` : `Pages ${p[0]}–${p[p.length - 1]}`);
+
+  async function getJSON(url) {
+    const r = await fetch(url);
+    if (!r.ok) throw new Error(`${url}: ${r.status}`);
+    return r.json();
+  }
+  async function loadAll() {
+    if (!state.index) {
+      state.index = (await getJSON("data/issues.json")).issues;
+      await Promise.all(state.index.map(async i => { state.issues[i.number] = await getJSON(`data/${i.slug}.json`); }));
+      state.credits = await getJSON("data/credits.json").catch(() => null);
+    }
+  }
+  const latest = () => state.index[0];
+  const allArticles = () => state.index.flatMap(i => state.issues[i.number].articles.map(a => ({ a, issue: state.issues[i.number] })));
+  const artHref = (issue, a) => `#n${issue.number}-${a.id}`;
+  const thumb = a => (a.images && a.images[0]) || (a.blocks.find(b => b.type === "gallery") || {}).images?.[0];
+
+  /* ----- chrome ----- */
+  function applyTheme(issue) {
+    const t = issue.theme || {};
+    const r = document.documentElement.style;
+    r.setProperty("--band", t.band || "#28408f");
+    r.setProperty("--strip", t.strip || "#6ccff6");
+    r.setProperty("--head-l", t.head || "#2b3990");
+    r.setProperty("--head-d", t.headDark || "#9eabff");
+    r.setProperty("--accent-l", t.accent || "#1fa3dc");
+    r.setProperty("--accent-d", t.accentDark || "#6ccff6");
+    $("#mast-img").src = `img/${issue.slug}/masthead.jpg`;
+  }
+  function chrome({ issue, showBadge, kicker, folio, nav }) {
+    applyTheme(issue);
+    const b = $("#badge");
+    if (showBadge) {
+      const [y, m] = issue.date.split("-");
+      b.innerHTML = `Issue ${issue.number}<b>${MONTHS[+m - 1]}<br>${y}</b>`;
+      b.hidden = false;
+    } else b.hidden = true;
+    $("#sectionbar").hidden = !kicker;
+    $("#kicker").textContent = kicker || "";
+    $("#folio").textContent = folio || "";
+    document.querySelectorAll("[data-nav]").forEach(a => a.removeAttribute("aria-current"));
+    document.querySelectorAll("[data-nav]").forEach(a => { if (a.dataset.nav === nav) a.setAttribute("aria-current", "page"); });
+  }
+  const statusPill = i => i.status === "review" ? `<span class="pill review">In final review</span>` : `<span class="pill printed">Printed</span>`;
+
+  /* ----- indexes ----- */
+  function tally(key) {
+    const m = new Map();
+    for (const { a, issue } of allArticles()) for (const v of a[key] || []) {
+      if (!m.has(v)) m.set(v, []);
+      m.get(v).push({ a, issue });
+    }
+    return m;
+  }
+  const chipList = (m, prefix, limit) => {
+    const items = [...m.entries()].sort((x, y) => y[1].length - x[1].length || x[0].localeCompare(y[0]));
+    return `<div class="chips">${items.slice(0, limit || items.length).map(([k, v]) =>
+      `<a class="chip" href="#${prefix}-${slug(k)}">${esc(k)}<span class="n">${v.length}</span></a>`).join("")}</div>`;
+  };
+
+  function rowHTML({ a, issue }, showIssue) {
+    const t = thumb(a);
+    return `<a class="row" href="${artHref(issue, a)}">
+      <div class="thumb">${t ? `<img loading="lazy" src="${t.src}" alt="">` : ""}</div>
+      <div><h3>${esc(a.title)}</h3><p>${esc(a.summary || a.subtitle || "")}</p>
+      <div class="meta">${showIssue ? `Issue ${issue.number} · ${esc(issue.title)} · ` : ""}${esc(a.section)} · ${pageList(a.pages)}${a.kind === "photos" ? " · Photos" : ` · ${a.minutes} min read`}</div></div></a>`;
+  }
+
+  /* ----- views ----- */
+  function viewHome(q) {
+    const L = latest();
+    chrome({ issue: state.issues[L.number], nav: "home" });
+    const places = tally("locations"), topics = tally("topics");
+    places.delete("Province-wide");
+    main.innerHTML = `<div class="wrap home-grid">
+      <section>
+        <div class="block-head"><h2>Issues</h2><span class="meta">${plural(state.index.length, "issue")} · ${allArticles().length} articles</span></div>
+        <div class="issues">${state.index.map(i => `<a class="issue-card" href="#n${i.number}">
+          <img src="${i.cover}" alt="Front page of Issue ${i.number}" loading="lazy">
+          <div><span class="eyebrow">Issue ${i.number}</span><span class="no">${esc(i.title)}</span>
+          <span>${statusPill(i)}</span>
+          <span class="lead">${esc(i.lead.title)}</span>
+          <span class="meta">${plural(i.articleCount, "article")}</span></div></a>`).join("")}</div>
+      </section>
+      <section>
+        <div class="block-head"><h2>Search</h2></div>
+        <form class="search" id="search-form" role="search"><input id="q" type="search" placeholder="Search every issue, e.g. Kokoda, police, budget" aria-label="Search articles" value="${esc(q || "")}"></form>
+        <div id="results" class="list" style="margin-top:12px"></div>
+      </section>
+      <section>
+        <div class="block-head"><h2>Places</h2><a href="#places">All places A–Z</a></div>
+        ${chipList(places, "place", 24)}
+      </section>
+      <section>
+        <div class="block-head"><h2>Topics</h2><a href="#topics">All topics</a></div>
+        ${chipList(topics, "topic")}
+      </section>
+    </div>`;
+    const input = $("#q"), out = $("#results");
+    const run = () => {
+      const s = input.value.trim().toLowerCase();
+      if (s.length < 2) { out.innerHTML = ""; return; }
+      const words = s.split(/\s+/);
+      const hits = allArticles().map(x => {
+        const hay = [x.a.title, x.a.subtitle, x.a.section, ...(x.a.locations || []), ...(x.a.topics || []),
+          ...x.a.blocks.map(b => b.text || ""), ...(x.a.images || []).map(i => i.caption || "")].join(" ").toLowerCase();
+        const inTitle = words.filter(w => x.a.title.toLowerCase().includes(w)).length;
+        return words.every(w => hay.includes(w)) ? { x, score: inTitle } : null;
+      }).filter(Boolean).sort((p, q) => q.score - p.score);
+      out.innerHTML = hits.length ? `<p class="meta">${plural(hits.length, "article")} found</p>` + hits.map(h => rowHTML(h.x, true)).join("")
+        : `<p class="muted">No articles mention “${esc(input.value)}”. Try a place name or a shorter word.</p>`;
+    };
+    input.addEventListener("input", run);
+    $("#search-form").addEventListener("submit", e => { e.preventDefault(); run(); });
+    if (q) run();
+  }
+
+  function viewIssue(n) {
+    const issue = state.issues[n];
+    if (!issue) return notFound();
+    chrome({ issue, showBadge: true, nav: "home", kicker: `Issue ${issue.number} · ${issue.title}`, folio: plural(issue.articles.length, "article") });
+    const feat = issue.articles.find(a => a.featured) || issue.articles[0];
+    const rest = issue.articles.filter(a => a !== feat);
+    const sections = [...new Set(rest.map(a => a.section))];
+    const ft = thumb(feat);
+    main.innerHTML = `<div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="#">All issues</a><span>/</span><span>Issue ${issue.number}</span></nav>
+      <div class="issue-top" style="margin-top:14px">
+        <img src="${issue.cover}" alt="Front page of Issue ${issue.number}">
+        <div><span class="eyebrow">Issue ${issue.number}</span><h1 class="big-head">${esc(issue.title)}</h1>
+        <div>${statusPill(issue)}</div></div>
+      </div>
+      ${issue.status === "review" && issue.reviewNotes?.length ? `<aside class="review"><h2>Editor's review checklist</h2>
+        <p style="margin:0 0 8px;font-size:.95rem">This issue has not gone to print. These items were found while preparing the digital edition:</p>
+        <ol>${issue.reviewNotes.map(t => `<li>${esc(t)}</li>`).join("")}</ol></aside>` : ""}
+      <a class="feature" href="${artHref(issue, feat)}">
+        ${ft ? `<img src="${ft.src}" alt="">` : ""}
+        <div><span class="eyebrow">Cover story · ${esc(feat.section)}</span><h2 class="big-head">${esc(feat.title)}</h2>
+        <p>${esc(feat.summary)}</p><span class="meta">${pageList(feat.pages)} · ${feat.minutes} min read</span></div></a>
+      ${sections.map(s => `<h2 class="sec-label">${esc(s)}</h2><div class="list">${rest.filter(a => a.section === s).map(a => rowHTML({ a, issue })).join("")}</div>`).join("")}
+    </div>`;
+  }
+
+  let lbSet = [], lbIdx = 0;
+  function viewArticle(n, id) {
+    const issue = state.issues[n];
+    const a = issue && issue.articles.find(x => x.id === id);
+    if (!a) return notFound();
+    chrome({ issue, showBadge: true, nav: "home", kicker: a.section, folio: `Issue ${issue.number} | ${issue.title} | ${pageList(a.pages)}` });
+    const imgs = (a.images || []).slice();
+    const lead = a.kind === "notice" ? null : imgs.shift();
+    const fig = (im, cls = "figure") => `<figure class="${cls}"><img loading="lazy" src="${im.src}" width="${im.w}" height="${im.h}" alt="${esc(im.caption || "")}" data-zoom>${im.caption ? `<figcaption><span class="tri">▲</span>${esc(im.caption)}</figcaption>` : ""}</figure>`;
+
+    const textBlocks = a.blocks.filter(b => b.type !== "gallery");
+    const galleries = a.blocks.filter(b => b.type === "gallery");
+    // spread remaining photos through the text
+    const paraIdx = textBlocks.map((b, i) => b.type === "p" ? i : -1).filter(i => i > 0);
+    const slots = new Map();
+    imgs.forEach((im, k) => {
+      if (!paraIdx.length) return;
+      const at = paraIdx[Math.min(paraIdx.length - 1, Math.floor((k + 1) * paraIdx.length / (imgs.length + 1)))];
+      if (!slots.has(at)) slots.set(at, []);
+      slots.get(at).push(im);
+    });
+    const placed = new Set([...slots.values()].flat());
+    let dropDone = false, html = "", list = null;
+    const closeList = () => { if (list) { html += `</${list}>`; list = null; } };
+    textBlocks.forEach((b, i) => {
+      const wantList = b.type === "li" ? "ul" : b.type === "ol" ? "ol" : null;
+      if (wantList !== list) { closeList(); if (wantList) { html += `<${wantList}>`; list = wantList; } }
+      if (b.type === "lede") { html += `<p class="lede${dropDone ? "" : " dropcap"}">${md(b.text)}</p>`; dropDone = true; }
+      else if (b.type === "h") html += `<h2 class="sub-h">${md(b.text)}</h2>`;
+      else if (b.type === "li" || b.type === "ol") html += `<li>${md(b.text)}</li>`;
+      else if (b.type === "sign") html += `<p class="sign">${md(b.text)}<span>${md(b.role || "")}</span></p>`;
+      else { html += `<p${!dropDone && a.kind !== "notice" ? ' class="dropcap"' : ""}>${md(b.text)}</p>`; dropDone = true; }
+      if (slots.has(i)) { closeList(); html += slots.get(i).map(im => fig(im)).join(""); }
+    });
+    closeList();
+    const leftovers = imgs.filter(im => !placed.has(im));
+    if (a.kind === "notice") html += `<div class="notice">${leftovers.map(im => `<img src="${im.src}" alt="${esc(a.title)}" data-zoom>`).join("")}</div>`;
+    else html += leftovers.map(im => fig(im)).join("");
+    const portraits = a.id === "llg-presidents";
+    html += galleries.map(g => `<section class="gallery${portraits ? " portraits" : ""}">${g.title ? `<h2>${esc(g.title)}</h2>` : ""}
+      <div class="grid">${g.images.map(im => {
+        let cap = "";
+        if (im.caption && portraits) { const [name, ...rest] = im.caption.split(" · "); cap = `<figcaption><b>${esc(name)}</b>${rest.map(esc).join("<br>")}</figcaption>`; }
+        else if (im.caption) cap = `<figcaption><span class="tri">▲</span>${esc(im.caption)}</figcaption>`;
+        return `<figure><img loading="lazy" src="${im.src}" alt="${esc(im.caption || g.title || "")}" data-zoom>${cap}</figure>`;
+      }).join("")}</div>${g.text ? `<p class="muted">${esc(g.text)}</p>` : ""}</section>`).join("");
+
+    const i = issue.articles.indexOf(a);
+    const prev = issue.articles[i - 1], next = issue.articles[i + 1];
+    main.innerHTML = `<div class="wrap"><article class="article">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="#">All issues</a><span>/</span><a href="#n${issue.number}">Issue ${issue.number} · ${esc(issue.title)}</a></nav>
+      <div class="art-head">
+        <h1 class="big-head">${esc(a.title)}</h1>
+        ${a.subtitle ? `<p class="sub" style="margin:0">${esc(a.subtitle)}</p>` : ""}
+        ${a.byline ? `<span class="byline">${esc(a.byline)}</span>` : ""}
+        <span class="meta">${pageList(a.pages)}${a.kind === "photos" ? "" : ` · ${a.minutes} min read`}</span>
+      </div>
+      ${lead ? fig(lead, "figure lead-figure") : ""}
+      <div class="body">${html}</div>
+      ${(a.locations?.length || a.topics?.length) ? `<div class="tags">
+        ${a.locations?.length ? `<div class="row-t"><span class="lbl">Places</span>${a.locations.map(l => `<a class="chip" href="#place-${slug(l)}">${esc(l)}</a>`).join("")}</div>` : ""}
+        ${a.topics?.length ? `<div class="row-t"><span class="lbl">Topics</span>${a.topics.map(t => `<a class="chip" href="#topic-${slug(t)}">${esc(t)}</a>`).join("")}</div>` : ""}
+      </div>` : ""}
+      <nav class="pager" aria-label="More from this issue">
+        ${prev ? `<a href="${artHref(issue, prev)}"><span class="meta">‹ Previous</span><b>${esc(prev.title)}</b></a>` : ""}
+        ${next ? `<a class="next" href="${artHref(issue, next)}"><span class="meta">Next ›</span><b>${esc(next.title)}</b></a>` : `<a class="next" href="#n${issue.number}"><span class="meta">Back to</span><b>Issue ${issue.number} contents</b></a>`}
+      </nav>
+    </article></div>`;
+    lbSet = [...main.querySelectorAll("[data-zoom]")];
+    lbSet.forEach((img, k) => img.addEventListener("click", () => openLB(k)));
+  }
+
+  function viewAZ(kind) {
+    const key = kind === "places" ? "locations" : "topics";
+    const m = tally(key);
+    chrome({ issue: state.issues[latest().number], nav: kind, kicker: kind === "places" ? "Places" : "Topics", folio: "Across all issues" });
+    const items = [...m.entries()].sort((x, y) => x[0].localeCompare(y[0]));
+    main.innerHTML = `<div class="wrap">
+      <h1 class="big-head" style="margin-bottom:6px">${kind === "places" ? "Places" : "Topics"}</h1>
+      <p class="muted" style="margin:0 0 20px;max-width:var(--measure)">${kind === "places"
+        ? "Every village, station, district and road named in the Northern Observer. This list grows with each issue."
+        : "Stories grouped by subject across every issue."}</p>
+      <div class="az">${items.map(([k, v]) => `<a href="#${kind === "places" ? "place" : "topic"}-${slug(k)}"><span>${esc(k)}</span><span class="n">${v.length}</span></a>`).join("")}</div>
+    </div>`;
+  }
+
+  function viewTag(kind, s) {
+    const key = kind === "place" ? "locations" : "topics";
+    const m = tally(key);
+    const entry = [...m.entries()].find(([k]) => slug(k) === s);
+    if (!entry) return notFound();
+    const [name, hits] = entry;
+    chrome({ issue: state.issues[latest().number], nav: kind === "place" ? "places" : "topics", kicker: kind === "place" ? "Place" : "Topic", folio: plural(hits.length, "article") });
+    hits.sort((x, y) => y.issue.number - x.issue.number || x.a.order - y.a.order);
+    main.innerHTML = `<div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="#${kind === "place" ? "places" : "topics"}">${kind === "place" ? "Places" : "Topics"}</a></nav>
+      <h1 class="big-head" style="margin:10px 0 20px">${esc(name)}</h1>
+      <div class="list">${hits.map(h => rowHTML(h, true)).join("")}</div></div>`;
+  }
+
+  function viewCredits() {
+    chrome({ issue: state.issues[latest().number], nav: "credits", kicker: "Credits", folio: "Northern Observer" });
+    const c = state.credits || {};
+    const tbc = `<span class="tbc">To be confirmed</span>`;
+    main.innerHTML = `<div class="wrap credits">
+      <div><h1 class="big-head">Credits</h1>
+      <p>${esc(c.publisher?.detail || "")}</p></div>
+      <section><div class="block-head"><h2>Published by</h2></div>
+        <dl><dt>Publisher</dt><dd>${esc(c.publisher?.name || "")}</dd><dt>Website</dt><dd>${esc(c.publisher?.web || "")}</dd></dl></section>
+      <section><div class="block-head"><h2>Masthead</h2></div>
+        <dl>${(c.masthead || []).map(m => `<dt>${esc(m.role)}</dt><dd>${m.name ? esc(m.name) : tbc}</dd>`).join("")}</dl></section>
+      <section><div class="block-head"><h2>Contributors</h2></div>
+        <dl>${(c.contributors || []).map(m => `<dt>${esc(m.name)}${m.affiliation ? ` · ${esc(m.affiliation)}` : ""}</dt><dd>${esc(m.note || "")}</dd>`).join("")}</dl></section>
+      <section><div class="block-head"><h2>Issues</h2></div>
+        <dl>${state.index.map(i => `<dt>Issue ${i.number}</dt><dd>${esc(i.title)} · ${i.status === "review" ? "In final review" : "Printed"}</dd>`).join("")}</dl></section>
+      <p class="muted">${esc(c.digital || "")}</p>
+    </div>`;
+  }
+
+  function notFound() {
+    chrome({ issue: state.issues[latest().number], nav: "" });
+    main.innerHTML = `<div class="wrap"><h1 class="cond-head">Page not found</h1><p>That link doesn't match an article. <a href="#">Go to all issues</a>.</p></div>`;
+  }
+
+  /* ----- lightbox ----- */
+  const lb = $("#lightbox");
+  function openLB(k) {
+    lbIdx = k; showLB(); lb.hidden = false; document.body.style.overflow = "hidden"; $("#lb-close").focus();
+  }
+  function showLB() {
+    const img = lbSet[lbIdx];
+    $("#lb-img").src = img.src; $("#lb-img").alt = img.alt;
+    $("#lb-cap").textContent = img.alt;
+    $("#lb-count").textContent = `${lbIdx + 1} / ${lbSet.length}`;
+  }
+  function closeLB() { lb.hidden = true; document.body.style.overflow = ""; lbSet[lbIdx]?.focus?.(); }
+  $("#lb-close").addEventListener("click", closeLB);
+  $("#lb-prev").addEventListener("click", () => { lbIdx = (lbIdx - 1 + lbSet.length) % lbSet.length; showLB(); });
+  $("#lb-next").addEventListener("click", () => { lbIdx = (lbIdx + 1) % lbSet.length; showLB(); });
+  lb.addEventListener("click", e => { if (e.target === lb || e.target.classList.contains("stage")) closeLB(); });
+  document.addEventListener("keydown", e => {
+    if (lb.hidden) return;
+    if (e.key === "Escape") closeLB();
+    if (e.key === "ArrowLeft") $("#lb-prev").click();
+    if (e.key === "ArrowRight") $("#lb-next").click();
+  });
+
+  /* ----- router ----- */
+  async function route() {
+    try { await loadAll(); } catch (e) {
+      main.innerHTML = `<div class="wrap"><h1 class="cond-head">The newsletter couldn't load</h1><p>Check your connection and reload the page. (${esc(e.message)})</p></div>`;
+      return;
+    }
+    if (!lb.hidden) closeLB();
+    const h = decodeURIComponent(location.hash.replace(/^#/, ""));
+    let m;
+    if (!h) viewHome();
+    else if ((m = h.match(/^n(\d+)$/))) viewIssue(+m[1]);
+    else if ((m = h.match(/^n(\d+)-(.+)$/))) viewArticle(+m[1], m[2]);
+    else if (h === "places" || h === "topics") viewAZ(h);
+    else if ((m = h.match(/^(place|topic)-(.+)$/))) viewTag(m[1], m[2]);
+    else if (h === "credits") viewCredits();
+    else notFound();
+    window.scrollTo(0, 0);
+    const t = $("h1", main);
+    document.title = t && h ? `${t.textContent} · Northern Observer` : "Northern Observer";
+  }
+  window.addEventListener("hashchange", route);
+  route();
+})();
+</script>

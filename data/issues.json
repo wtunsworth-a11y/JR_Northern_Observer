@@ -1,0 +1,46 @@
+{
+ "issues": [
+  {
+   "number": 2,
+   "slug": "issue-02",
+   "title": "November 2026",
+   "date": "2026-11",
+   "status": "review",
+   "cover": "img/issue-02/cover.jpg",
+   "theme": {
+    "band": "#28408f",
+    "strip": "#6ccff6",
+    "head": "#2b3990",
+    "headDark": "#9eabff",
+    "accent": "#1fa3dc",
+    "accentDark": "#6ccff6"
+   },
+   "lead": {
+    "id": "kokoda-sealed",
+    "title": "Kokoda Sealed!"
+   },
+   "articleCount": 21
+  },
+  {
+   "number": 1,
+   "slug": "issue-01",
+   "title": "October 2026",
+   "date": "2026-10",
+   "status": "published",
+   "cover": "img/issue-01/cover.jpg",
+   "theme": {
+    "band": "#414143",
+    "strip": "#f5c400",
+    "head": "#1d6b2c",
+    "headDark": "#8fd35a",
+    "accent": "#5aa832",
+    "accentDark": "#8fd35a"
+   },
+   "lead": {
+    "id": "k6m-law-and-order",
+    "title": "K6 Million Boost for Law & Order"
+   },
+   "articleCount": 23
+  }
+ ]
+}
