@@ -10,7 +10,8 @@
   "head": "#2b3990",
   "headDark": "#9eabff",
   "accent": "#1fa3dc",
-  "accentDark": "#6ccff6"
+  "accentDark": "#6ccff6",
+  "mastInk": "#ffffff"
  },
  "sections": [
   "Infrastructure",

@@ -26,6 +26,7 @@
   /* issue colours, replaced per issue from data */
   --band: #28408f;
   --strip: #6ccff6;
+  --mast-ink: #ffffff;
   --head-l: #2b3990;
   --head-d: #9eabff;
   --accent-l: #1fa3dc;
@@ -80,7 +81,12 @@ img { max-width: 100%; display: block; }
 /* ---------- masthead ---------- */
 .masthead { background: var(--band); color: #fff; }
 .masthead .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 10px; }
-.masthead a.brand { display: block; flex: 0 1 26rem; min-width: 0; }
+.masthead a.brand { display: block; flex: 0 1 26rem; min-width: 0; position: relative; container-type: inline-size; }
+.masthead .the {
+  position: absolute; left: 29.6%; top: 1.5%; pointer-events: none;
+  font: 900 5.6cqw/1 var(--display); letter-spacing: -.01em; color: var(--mast-ink);
+  text-shadow: 0 0 .12em rgba(0,0,0,.25);
+}
 .masthead a.brand img { width: 100%; height: auto; }
 .badge {
   flex: 0 0 auto; background: var(--strip); color: var(--band);
@@ -280,7 +286,7 @@ footer.foot .wrap { display: flex; justify-content: space-between; gap: 12px; fl
 
 <header>
   <div class="masthead"><div class="wrap">
-    <a class="brand" href="#" aria-label="Northern Observer home"><img id="mast-img" alt="Northern Observer" width="1200" height="280"></a>
+    <a class="brand" href="#" aria-label="The Northern Observer home"><span class="the" aria-hidden="true">The</span><img id="mast-img" alt="The Northern Observer" width="1200" height="280"></a>
     <div class="badge" id="badge" hidden></div>
   </div></div>
   <div class="strip"><div class="wrap">Oro Provincial Government | Monthly Newsletter</div></div>
@@ -343,6 +349,7 @@ footer.foot .wrap { display: flex; justify-content: space-between; gap: 12px; fl
     const r = document.documentElement.style;
     r.setProperty("--band", t.band || "#28408f");
     r.setProperty("--strip", t.strip || "#6ccff6");
+    r.setProperty("--mast-ink", t.mastInk || "#ffffff");
     r.setProperty("--head-l", t.head || "#2b3990");
     r.setProperty("--head-d", t.headDark || "#9eabff");
     r.setProperty("--accent-l", t.accent || "#1fa3dc");
