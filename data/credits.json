@@ -1,0 +1,17 @@
+{
+  "publisher": {
+    "name": "Oro Provincial Government",
+    "detail": "Northern Observer is the monthly newsletter of the Oro Provincial Government, Northern (Oro) Province, Papua New Guinea.",
+    "web": "www.opg.gov.pg"
+  },
+  "masthead": [
+    {"role": "Editor", "name": null},
+    {"role": "Design & layout", "name": null},
+    {"role": "Photography", "name": null},
+    {"role": "Printing", "name": null}
+  ],
+  "contributors": [
+    {"name": "Muriel Tovivi", "affiliation": "NBC", "note": "Higaturu TVET; Oro Government and NHC property transfers (Issue 2)"}
+  ],
+  "digital": "The digital edition is built from the print PDFs. Article text and photos are taken directly from the printed pages."
+}

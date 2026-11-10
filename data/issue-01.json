@@ -1,0 +1,1964 @@
+{
+ "number": 1,
+ "slug": "issue-01",
+ "title": "October 2026",
+ "date": "2026-10",
+ "status": "published",
+ "theme": {
+  "band": "#414143",
+  "strip": "#f5c400",
+  "head": "#1d6b2c",
+  "headDark": "#8fd35a",
+  "accent": "#5aa832",
+  "accentDark": "#8fd35a"
+ },
+ "sections": [
+  "Law and Order",
+  "Opinion",
+  "Governance",
+  "Infrastructure",
+  "Education",
+  "Sports",
+  "Notices"
+ ],
+ "cover": "img/issue-01/cover.jpg",
+ "reviewNotes": [],
+ "credits": {},
+ "articles": [
+  {
+   "id": "k6m-law-and-order",
+   "order": 0,
+   "title": "K6 Million Boost for Law & Order",
+   "section": "Law and Order",
+   "pages": [
+    1
+   ],
+   "kind": "story",
+   "featured": true,
+   "summary": "The Oro Provincial Government has announced a significant investment of Six Million Kina (K6 million) to address law and order challenges and support the province’s rapidly expanding development, particularly in the…",
+   "minutes": 2,
+   "locations": [
+    "Oro Bay",
+    "Isivini",
+    "Warru",
+    "Popondetta",
+    "Girua"
+   ],
+   "topics": [
+    "Law & Order",
+    "Budget & Finance"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/k6m-law-and-order-1.jpg",
+     "w": 1100,
+     "h": 1528,
+     "caption": "Constable Farapo leading a recent Parade at Girua Airport."
+    },
+    {
+     "src": "img/issue-01/k6m-law-and-order-2.jpg",
+     "w": 725,
+     "h": 487,
+     "caption": "ACP Southen Command Division Joseph Puri receiving the cheque from Oro Governor Hon. Gary Juffa whilst sector Chairman Finance Sheldon Deilala (right) and Director Community Policing Chief Superintendent Godwin Dukaduka (right) looks on."
+    }
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "The Oro Provincial Government has announced a significant investment of Six Million Kina (K6 million) to address law and order challenges and support the province’s rapidly expanding development, particularly in the agriculture sector."
+    },
+    {
+     "type": "p",
+     "text": "Northern Governor, Hon. Gary Juffa, said his government is taking the lead in addressing law and order, recognizing the pivotal role a stable environment plays in fostering growth and development for Oro."
+    },
+    {
+     "type": "p",
+     "text": "“Oro is rapidly expanding in the agriculture sector, and we are aware that we have frontline policing challenges. These moves are strategic and timely,” Governor Juffa said."
+    },
+    {
+     "type": "p",
+     "text": "The K6 million investment will be allocated across several key infrastructure and communications projects:"
+    },
+    {
+     "type": "li",
+     "text": "K1.5 Million for the construction of a temporary Provincial Police Command, following the decommissioning of the former facility in August."
+    },
+    {
+     "type": "li",
+     "text": "K1 Million to commence construction of a 10-man barracks in Oro Bay. This will bolster security at the Economic Corridor Gateway in East Oro Bay LLG, which houses the Provincial sea port."
+    },
+    {
+     "type": "li",
+     "text": "K1 Million for the construction of a 10-man police barracks at Isivini, complete with all modern fixtures and back-up power. This facility will seriously strengthen policing in the rural outskirts of Warru, Isivini, and reach as far as the middle Kaiva area—the midpoint of the economic corridor between Kokoda and Oro Bay."
+    },
+    {
+     "type": "li",
+     "text": "K500,000 allocated to communications company Digicel to revamp coverage, ensuring prompt mobile communications for this high-priority area."
+    },
+    {
+     "type": "li",
+     "text": "K1 Million for the renovation and restoration of four existing houses in the Isivini area, released to Police by the Oil Palm Industry Corporation (OPIC). These will support frontline policing efforts on the periphery of the Popondetta Urban LLG—an area notorious for recent gang-related violence."
+    },
+    {
+     "type": "p",
+     "text": "Provincial Administrator Roger Irurapa added that these key installations will augur well for restoring confidence in the people of Oro regarding the government’s efforts to address law and order."
+    },
+    {
+     "type": "p",
+     "text": "Governor Juffa lauded the continued confidence of the Marape-Rosso government for its stern support in ensuring Oro received adequate and serious funding for the frontline policing challenges it faces amidst the rapid pace of development it is experiencing."
+    }
+   ]
+  },
+  {
+   "id": "editors-note",
+   "order": 1,
+   "title": "Editor's Note",
+   "section": "Opinion",
+   "pages": [
+    2
+   ],
+   "kind": "column",
+   "featured": false,
+   "summary": "WELCOME TO the first edition of the Northern Observer for 2026",
+   "minutes": 1,
+   "locations": [
+    "Popondetta",
+    "Kikiri",
+    "Biru"
+   ],
+   "topics": [
+    "Governance"
+   ],
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**WELCOME TO** the first edition of the Northern Observer for 2026"
+    },
+    {
+     "type": "p",
+     "text": "In this issue, we look at government institutions and community initiatives that are working towards addressing law and order and bringing changes to our province."
+    },
+    {
+     "type": "p",
+     "text": "The clean and green project initiated by the Law and Order Sector looks at transforming the township of Popondetta while the police plan more posts in significant locations including Kikiri which serves as an important transit point."
+    },
+    {
+     "type": "p",
+     "text": "Also in this edition, we bring to you the story on Biru Correctional Institution and the infrastructure development for Popondetta District, the new electorate established recently."
+    },
+    {
+     "type": "p",
+     "text": "Looking at the infrastructure development for Northern, the opening of two important projects including the Accidents and Emergency unit of the Popondetta General Hospital and the Provincial Executive Council Building marks a milestone achievement for the provincial government."
+    },
+    {
+     "type": "p",
+     "text": "We look forward for many more such developments for the province which we hope to bring to you in the next editions."
+    }
+   ]
+  },
+  {
+   "id": "governors-address",
+   "order": 2,
+   "title": "Governor's Address",
+   "section": "Opinion",
+   "pages": [
+    2
+   ],
+   "byline": "Hon. Gary Juffa, MP — Governor, Oro Province",
+   "kind": "column",
+   "featured": false,
+   "summary": "MY DEAR people of Oro, fellow Papua New Guineans, friends, visitors and valued investors. It is with great pride and a deep sense of responsibility that I welcome you to this latest edition of the Northern Observer.",
+   "minutes": 1,
+   "locations": [
+    "Popondetta",
+    "Kikiri"
+   ],
+   "topics": [
+    "Governance"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/governors-address-1.jpg",
+     "w": 310,
+     "h": 533,
+     "caption": "Hon. Gary Juffa, MP, Governor, Oro Province"
+    }
+   ],
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**MY DEAR** people of Oro, fellow Papua New Guineans, friends, visitors and valued investors. It is with great pride and a deep sense of responsibility that I welcome you to this latest edition of the Northern Observer."
+    },
+    {
+     "type": "p",
+     "text": "In these pages we bring to you stories of government institutions and the community working towards addressing law and order."
+    },
+    {
+     "type": "p",
+     "text": "The clean and green project initiated by the Law and Order Sector looks at transforming the township of Popondetta while the police plan more posts in significant locations including Kikiri which serves as an important transit point."
+    },
+    {
+     "type": "p",
+     "text": "Looking at the infrastructure development for Northern, the opening of two important projects including the Accidents and Emergency unit of the Popondetta General Hospital and the Provincial Executive Council Building marks a milestone achievement for the provincial government."
+    },
+    {
+     "type": "p",
+     "text": "We look forward for many more such developments for the province which we hope to bring to you in the next editions."
+    }
+   ]
+  },
+  {
+   "id": "independence-el-nino",
+   "order": 3,
+   "title": "Oro Provincial Government Budget Review, El Niño Response, and PNG's 51st Independence Anniversary",
+   "section": "Opinion",
+   "pages": [
+    2
+   ],
+   "byline": "Hon. Gary Juffa, MP — Governor for Northern Province",
+   "kind": "story",
+   "featured": false,
+   "summary": "As we join the nation in commemorating Papua New Guinea’s 51st Independence Anniversary, I extend my greetings to the people of Oro Province.",
+   "minutes": 2,
+   "locations": [
+    "Tufi",
+    "Province-wide"
+   ],
+   "topics": [
+    "Budget & Finance",
+    "Disaster Relief",
+    "Governance"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/independence-el-nino-1.jpg",
+     "w": 1038,
+     "h": 472,
+     "caption": "Sector Chairman Sheldon Deilala with Training Team from Police Headquarters Southern Command Division at a briefing in Popondetta in preparation for training to commence."
+    }
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "As we join the nation in commemorating Papua New Guinea’s 51st Independence Anniversary, I extend my greetings to the people of Oro Province."
+    },
+    {
+     "type": "p",
+     "text": "While Independence is a time to reflect on our national journey, leadership requires us to confront hard truths and prioritize the urgent needs of our citizens above symbolic grandstanding."
+    },
+    {
+     "type": "p",
+     "text": "The Oro Provincial Government (OPG) recently conducted a comprehensive Budget Review. This exercise was essential to establish the true state of our province’s finances and systematically reallocate funds toward critical and emergency programs—most notably our response to the severe El Niño drought and pressing law and order issues."
+    },
+    {
+     "type": "p",
+     "text": "In light of this financial reality and the hardship facing our communities, the OPG will not host extravagant Independence celebrations this year. Our complete focus remains on ensuring that our affected people receive the direct assistance and basic services they deserve."
+    },
+    {
+     "type": "h",
+     "text": "Key provincial emergency actions"
+    },
+    {
+     "type": "p",
+     "text": "**Resource Reallocation:** In alignment with recent directives from the National Government, the OPG is diverting up to K10 million to address acute El Niño impacts across our communities."
+    },
+    {
+     "type": "p",
+     "text": "**Districts Assessment:** The Provincial Disaster Management Team is finalizing comprehensive impact assessments for all districts to guarantee targeted relief efforts."
+    },
+    {
+     "type": "p",
+     "text": "**Immediate Relief:** Active operations are underway to transport food, clean water, essential medicines, and critical consumables to affected areas."
+    },
+    {
+     "type": "p",
+     "text": "**Priority Response:** Based on incoming disaster reports, initial relief deployments are targeting the Tufi District, which currently stands as the most acutely affected region in the province."
+    },
+    {
+     "type": "p",
+     "text": "This Wednesday, to mark Independence Day, the OPG will gather community representatives—including Local Level Government Council Presidents, business leaders, and key stakeholders—for a practical working session. The event will be confined to a flag-raising ceremony, a dignified Police and CIS parade, hymns, and a formal presentation by the provincial government outlining the true state of the province, progress made, current challenges, and our forward plan to mitigate El Niño."
+    },
+    {
+     "type": "p",
+     "text": "We choose action over celebration, ensuring every available kina serves the safety and survival of the people of Oro. God bless Oro Province, and God bless Papua New Guinea."
+    },
+    {
+     "type": "sign",
+     "text": "Hon. Gary Juffa, MP",
+     "role": "Governor for Northern Province Oro Provincial Government"
+    }
+   ]
+  },
+  {
+   "id": "police-reserve-training",
+   "order": 4,
+   "title": "Northern Province Government Commits K6 Million to Law and Order, with K1 Million Released Today for Police Reserve Training",
+   "section": "Law and Order",
+   "pages": [
+    2
+   ],
+   "kind": "story",
+   "featured": false,
+   "summary": "The Governor of Northern Province, Hon. Gary Juffa, has announced a total funding commitment of 1 Million Kina toward law and order in the province today to commence the Royal PNG Constabulary to activate the Provincial…",
+   "minutes": 1,
+   "locations": [
+    "Province-wide"
+   ],
+   "topics": [
+    "Law & Order",
+    "Youth"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/police-reserve-training-1.jpg",
+     "w": 758,
+     "h": 495,
+     "caption": "Police at Bakumbari after ‘I Don’t Care’ gang attacks."
+    }
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "The Governor of Northern Province, Hon. Gary Juffa, has announced a total funding commitment of 1 Million Kina toward law and order in the province today to commence the Royal PNG Constabulary to activate the Provincial Police Command Reserve Police Training Program."
+    },
+    {
+     "type": "p",
+     "text": "The announcement was made this morning, underscoring the Provincial Government’s urgent response to the ongoing manpower shortages affecting frontline policing across Oro Province."
+    },
+    {
+     "type": "p",
+     "text": "“This funding is a direct response to the persistent manpower challenges that have hindered effective frontline policing in our province,” Governor Juffa said. “We cannot expect our police officers to protect our communities while they remain under-resourced and under-staffed. Today, we take a decisive step forward,” affirmed Governor Juffa"
+    },
+    {
+     "type": "p",
+     "text": "The initiative builds on a Memorandum of Understanding (MoU) signed in September 2024 between the Northern Provincial Government and the Royal Papua New Guinea Constabulary (RPNGC). That agreement established a framework for recruiting 100 reserve police personnel to assist with law and order in the province, with a focus on Grade 12 school leavers as a key recruitment pool ."
+    },
+    {
+     "type": "p",
+     "text": "Under the MoU, interested applicants were required to possess a minimum Grade 12 certificate and be residents of Northern Province. Recruits would undergo rigorous training before deployment across various districts, qualifying as reserve constables after six months with capabilities to investigate, prosecute, and arrest under summary offences ."
+    },
+    {
+     "type": "p",
+     "text": "“This is about investing in our youth and investing in our future. By bringing Grade 12 leavers into the reserve program, we are not only addressing manpower gaps but also giving our young people a constructive role in shaping the destiny of Oro Province,” Governor Juffa added."
+    },
+    {
+     "type": "p",
+     "text": "The Provincial Government reaffirmed its commitment to strengthening law and order institutions and called on stakeholders, communities, and relevant agencies to support the rollout of the program."
+    }
+   ]
+  },
+  {
+   "id": "police-vehicles",
+   "order": 5,
+   "title": "Popondetta District Purchases New Police Vehicles",
+   "section": "Law and Order",
+   "pages": [
+    3
+   ],
+   "kind": "story",
+   "featured": false,
+   "summary": "POPONDETTA District is continuing its support to Law and Order with the purchase of 10 new Police vehicles at the cost of K2 million.",
+   "minutes": 1,
+   "locations": [
+    "Popondetta"
+   ],
+   "topics": [
+    "Law & Order",
+    "Budget & Finance"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/police-vehicles-1.jpg",
+     "w": 1400,
+     "h": 667
+    }
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "POPONDETTA District is continuing its support to Law and Order with the purchase of 10 new Police vehicles at the cost of K2 million."
+    },
+    {
+     "type": "p",
+     "text": "Member for Popondetta District and Minister for Administrative Services Hon. Richard Masere said last year 10 new police vehicles were purchased out of which 4 were delivered in September last year."
+    },
+    {
+     "type": "p",
+     "text": "He added that the Police Department is yet to ship another 6 vehicles."
+    },
+    {
+     "type": "p",
+     "text": "These vehicles would be used for the work of policing to address the law and order in partnership with the Provincial Police Commander Chief Inspector Charles Winuan and Northern Governor Hon. Gary Juffa."
+    },
+    {
+     "type": "p",
+     "text": "Minister Masere said under the National Gaming Control Board, the district will be purchasing about K1m worth of vehicles including a 10-seater and a truck for prison operations."
+    },
+    {
+     "type": "p",
+     "text": "He added that they will also be given a 25-seater bus for transporting the staff and families."
+    },
+    {
+     "type": "p",
+     "text": "In addition to the 10 police vehicles, they are also purchasing another one for the traffic police."
+    },
+    {
+     "type": "p",
+     "text": "Meanwhile, the district has allocated K2m for the Popondetta town expansion program which will include K1m for water connection for landowners and another K1m for land restitution."
+    },
+    {
+     "type": "p",
+     "text": "Minister Masere said the district has also allocated K2.4m for economic activities, Small to Medium Enterprise, agriculture and fisheries."
+    },
+    {
+     "type": "p",
+     "text": "He added that every year since 2017, the district has been supporting Buna Dawn Service, on Remembrance day with the funding of K50,000."
+    },
+    {
+     "type": "p",
+     "text": "Minister Masere attributed the funding allocation of these projects to the increased budget of K86, 876, 578.95 this year."
+    },
+    {
+     "type": "p",
+     "text": "“These are the actual money that we have secured and with everything we are doing, we keep reminding the government to give the funding to protect this project,” he said."
+    }
+   ]
+  },
+  {
+   "id": "clean-and-green",
+   "order": 6,
+   "title": "Clean & Green Project Transforms Popondetta Town",
+   "section": "Law and Order",
+   "pages": [
+    3
+   ],
+   "kind": "story",
+   "featured": false,
+   "summary": "POPONDETTA Clean and Green exercise introduced by the Law and Justice Sector is transforming the township and addressing law and order issues.",
+   "minutes": 2,
+   "locations": [
+    "Popondetta"
+   ],
+   "topics": [
+    "Law & Order",
+    "Youth",
+    "Community"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/clean-and-green-1.jpg",
+     "w": 868,
+     "h": 502,
+     "caption": "Youths from Popondetta Urban Wards 1 - 5 who are responsible for the up-keep of the township, ensuring the safety of the members of the public under the Clean and Green project initiated by the Law and Justice Sector."
+    }
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "POPONDETTA Clean and Green exercise introduced by the Law and Justice Sector is transforming the township and addressing law and order issues."
+    },
+    {
+     "type": "p",
+     "text": "The capital of Northern which was once ruled by drunkards, street vendors and infested with petty crimes, has now been transformed completely, thanks to the Popondetta Urban youths."
+    },
+    {
+     "type": "p",
+     "text": "Under the Clean and Green exercise, about 25 to 30 youths from Wards 1 to 5 have been manning the township preventing street vendors, drunkards and criminals from loitering."
+    },
+    {
+     "type": "p",
+     "text": "The pilot project was initiated by the Law and Justice Sector from the office of Northern Governor Gary Juffa, headed by Chairman Mr Herbert Isemba."
+    },
+    {
+     "type": "p",
+     "text": "Popondetta Urban Ward 4 Councilor Mr Leslie Sevese is the coordinator of the Clean and Green project."
+    },
+    {
+     "type": "p",
+     "text": "“There’s a big difference now, we managed to keep the town clean and quiet over the festive period compared to the previous years."
+    },
+    {
+     "type": "p",
+     "text": "“The exercise has enabled the town to come to a stand-still, there were no street vendors or table sales.”"
+    },
+    {
+     "type": "p",
+     "text": "Mr Sevese explained that the Central Business District area covering wards 1 to 5 had been home to street vendors, criminals and drunkards."
+    },
+    {
+     "type": "p",
+     "text": "He added that the crime rate had spiked following the Local Level Government elections in the province."
+    },
+    {
+     "type": "p",
+     "text": "“We are now keeping the town clean, getting rid of illegal activities in front of shops, bus stops and ensuring the safety of the general public.”"
+    },
+    {
+     "type": "p",
+     "text": "Mr Sevesa said the project is running into its third week since its inception on December 3rd, 2025 and would be piloted for four months."
+    },
+    {
+     "type": "p",
+     "text": "“I want to commend the governor’s office through the Law and Justice Sector for coming up with this initiative in partnership with Popondetta Urban LLG."
+    },
+    {
+     "type": "p",
+     "text": "“I acknowledge Area Manager Mr Apolos Robinson and the new Popondetta town Mayor Hon. Henry Oreta for leading this project.”"
+    },
+    {
+     "type": "p",
+     "text": "“We have received a lot of positive comments from senior public servants, business houses and the general public.”"
+    },
+    {
+     "type": "p",
+     "text": "“We are continuing the awareness to ensure the township is vacated by 5pm every day.”"
+    }
+   ]
+  },
+  {
+   "id": "i-dont-care-gang",
+   "order": 7,
+   "title": "Oro Governor Commends Police Efforts in Crackdown on Notorious “I Don't Care” Gang",
+   "section": "Law and Order",
+   "pages": [
+    4
+   ],
+   "kind": "story",
+   "featured": false,
+   "summary": "GOVERNOR Gary Juffa has commended the dedicated men and women of the Royal Papua New Guinea Constabulary for their proactive and decisive actions in apprehending criminal elements terrorizing communities across Oro…",
+   "minutes": 2,
+   "locations": [
+    "Bakumbari"
+   ],
+   "topics": [
+    "Law & Order"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/i-dont-care-gang-1.jpg",
+     "w": 978,
+     "h": 704,
+     "caption": "Governor Juffa and Minister Peter Tsiamalili Jr visiting the people of Bakubari to address attacks by the ‘I Don’t Care gang ‘."
+    }
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "GOVERNOR Gary Juffa has commended the dedicated men and women of the Royal Papua New Guinea Constabulary for their proactive and decisive actions in apprehending criminal elements terrorizing communities across Oro Province."
+    },
+    {
+     "type": "p",
+     "text": "The province has recently experienced a surge in violent criminal activities perpetrated by the self-styled ‘I Don’t Care’ gang (also referred to as the ‘I Don’t Care Gang’). This notorious group has been linked to a series of brutal attacks, including a barbaric incident in early February 2026 in Bakubari Village, where multiple men were killed in a violent assault described by authorities as horrific, involving beheadings and severe injuries to others. Such acts of extreme violence, along with ongoing reports of robbery, harassment, and murder, have instilled fear among innocent citizens and disrupted peace in rural communities."
+    },
+    {
+     "type": "p",
+     "text": "In response, local police, supported by personnel from the Special Services Division, have mounted a coordinated crackdown following directives from the Commissioner of Police and local leaders to decisively target and dismantle the gang. Several members have been identified as suspects in murder and related crimes. Many have been successfully apprehended and are now in custody facing prosecution, while some were neutralized during operations when they resisted arrest and posed immediate threats to officers and the public."
+    },
+    {
+     "type": "p",
+     "text": "Governor Juffa praised the officers’ swift and courageous efforts despite challenging conditions, including resource limitations and fatigue."
+    },
+    {
+     "type": "p",
+     "text": "“I extend my gratitude to the national government, particularly to the Minister for Police and the Commissioner, for their swi response in allocating resources and addressing the urgen needs expressed by myself and the citizens of our province. also want to commend the Commissioner of Police for ensurin that additional support is provided to our local officers, wh have been performing admirably under challenging condition Despite their exhaustion and limited resources, they continue t do everything possible.”"
+    },
+    {
+     "type": "p",
+     "text": "Moreover, the Oro Provincial Government’s strategy t improve policing will be greatly boosted by the new provinci police headquarters and additional capacity-building effort for vehicle accommodation and staff training, which will furthe enhance the operational capabilities of local law enforcemen"
+    },
+    {
+     "type": "p",
+     "text": "Recent reports highlight a significant increase in arrest and prosecutions as a result of this initiative. The Governo also expressed appreciation for the collaborative suppo from fellow Open Members: the Honorable Minister fo Administration Services, Richard Masere; the Honorable Vic Minister for Finance, David Arore; and the Member for Soh Honorable Henry Amuli."
+    },
+    {
+     "type": "p",
+     "text": "Emphasizing the critical role of community involvemen Governor Juffa noted: “It is encouraging to see our communit come together with police personnel to identify and provid statements to help apprehend these criminals. This collaboratio is strengthening community policing in our province and wi pave the way for better law and order in our communities.”"
+    },
+    {
+     "type": "p",
+     "text": "The Governor reiterated his commitment to restoring peac and security in Oro Province, urging continued partnershi between authorities, leaders, and residents to eliminate suc threats and protect innocent lives."
+    }
+   ]
+  },
+  {
+   "id": "police-headquarters",
+   "order": 8,
+   "title": "New Police Headquarters Planned for Northern",
+   "section": "Law and Order",
+   "pages": [
+    4
+   ],
+   "kind": "story",
+   "featured": false,
+   "summary": "PLANS are underway to demolish and rebuild a new police headquarters in Popondetta, Northern Province.",
+   "minutes": 2,
+   "locations": [
+    "Popondetta",
+    "Beuru",
+    "Asigi"
+   ],
+   "topics": [
+    "Law & Order",
+    "Youth"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/police-headquarters-1.jpg",
+     "w": 728,
+     "h": 340,
+     "caption": "Law and Order Awareness and Surrender program at Beuru village in Asigi area, Popondetta District. The program was organised by Ms Lina Gala and attended by Northern Provincal Police Commander Chief Inspector Charles Winuan, Law ans Order Sector Chairman Mr Herbert Is ember and former Sohe MP Ms Delilah Gore."
+    },
+    {
+     "src": "img/issue-01/police-headquarters-2.jpg",
+     "w": 310,
+     "h": 215
+    },
+    {
+     "src": "img/issue-01/police-headquarters-3.jpg",
+     "w": 307,
+     "h": 217
+    }
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "PLANS are underway to demolish and rebuild a new police headquarters in Popondetta, Northern Province."
+    },
+    {
+     "type": "p",
+     "text": "Northern Provincial Police Commander Chief Inspector Charles Winuan confirmed the plans while stating that the building which houses the Police headquarters and the police station had been condemned by the National Health Department."
+    },
+    {
+     "type": "p",
+     "text": "He said although the building had been condemned, they have continued to use it because there was no alternate office space to provide these service."
+    },
+    {
+     "type": "p",
+     "text": "“The building was condemned and we were supposed to shut it down but if we cease operations, crime rate will increase and the victims would not have the services to lay their complaints.”"
+    },
+    {
+     "type": "p",
+     "text": "“We have to defy orders to still occupy that building and continue to provide service to the general public.”"
+    },
+    {
+     "type": "p",
+     "text": "Mr Winuan said law and order is not the business of the police alone but a concerted effort from the leaders and the community."
+    },
+    {
+     "type": "p",
+     "text": "He added that Section 197 of the PNG Constitutions stipulates that police role is to protect lives and property, apprehend and prosecute offenders."
+    },
+    {
+     "type": "p",
+     "text": "“I need our MPs to assist police to provide infrastructure. If they want law and order problems in the province to be minimized, we need their total support.”"
+    },
+    {
+     "type": "p",
+     "text": "“Without their input, we cannot fight crime, it is everyone’s business but we need government’s intervention to provide resources, training and infrastructure for us to live and work.”"
+    },
+    {
+     "type": "p",
+     "text": "“Our main aim in 2026 is to see reduction of crime in Oro as long as we all work together with one mind, spirit and effort to address law and order, I want to see this province moving forward.”"
+    },
+    {
+     "type": "p",
+     "text": "“We call on the local leaders to find means and ways to get the youths involved in training programs or Small to Medium Enterprise activities to keep them off the streets.”"
+    },
+    {
+     "type": "p",
+     "text": "PPC Winuan said they are working closely with the community leaders, church groups to assist youths surrender."
+    },
+    {
+     "type": "p",
+     "text": "“Many have shown interest to surrender. They can surrender but in the long run if we don’t assist them, they will return to crime.”"
+    },
+    {
+     "type": "p",
+     "text": "“I appeal to the ‘Don’t Care group’ and criminals in the province to lay down their arms, denounce violence and work the land, because this province is very rich, the land is so fertile.”"
+    },
+    {
+     "type": "p",
+     "text": "“You have the land, your land is there for you to use the tools to work the land and earn a good living.”"
+    }
+   ]
+  },
+  {
+   "id": "reforms-poorly-implemented",
+   "order": 9,
+   "title": "Reforms Poorly Implemented: Governor Juffa",
+   "section": "Governance",
+   "pages": [
+    5
+   ],
+   "kind": "story",
+   "featured": false,
+   "summary": "NORTHERN Governor Hon. Gary Juffa says the provincial government reforms have been poorly implemented since introduction in 1995 as too much power remains in Waigani.",
+   "minutes": 2,
+   "locations": [
+    "Province-wide",
+    "Waigani"
+   ],
+   "topics": [
+    "Governance"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/reforms-poorly-implemented-1.jpg",
+     "w": 935,
+     "h": 765
+    },
+    {
+     "src": "img/issue-01/reforms-poorly-implemented-2.jpg",
+     "w": 575,
+     "h": 625
+    },
+    {
+     "src": "img/issue-01/reforms-poorly-implemented-3.jpg",
+     "w": 642,
+     "h": 625
+    }
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "NORTHERN Governor Hon. Gary Juffa says the provincial government reforms have been poorly implemented since introduction in 1995 as too much power remains in Waigani."
+    },
+    {
+     "type": "p",
+     "text": "Governor Juffa who is also the Chairman of the Permanent Parliamentary Committee on Provincial Government reforms in his series of questions to Parliament, said that although there was good intension for the introduction of the reforms, provinces have continued to be spectators in their own developments causing a lot of problems today."
+    },
+    {
+     "type": "p",
+     "text": "He added that in 2025, the governors unanimously affirmed to revert to the former provincial government system to correct these wrongs whereby little good could be retained out of the reforms."
+    },
+    {
+     "type": "p",
+     "text": "Governor Juffa said that Dr Thomas Webstar and his technical team had presented a blue print to deliver real change which includes diverting block grants, greater financial freedom and a simpler three tier government."
+    },
+    {
+     "type": "p",
+     "text": "He also questioned if the National Executive Council had adopted the blue print, enquiring what amendments to inter-governmental revenue functions and funds Act will ensure provinces receive unconditional block grants directly with Financial Departments delay."
+    },
+    {
+     "type": "p",
+     "text": "Governor Juffa also asked if the reforms enable the provincial governments executive council’s power to appoint and manage their own public sector."
+    },
+    {
+     "type": "p",
+     "text": "“The governors have acted with the 2023 resolutions and 2025 affirmations. “The task force has delivered the blue print so we are merely asking for an update,” Governor Juffa said."
+    },
+    {
+     "type": "p",
+     "text": "Minister for Provincial and Local Government Affairs Hon. Soroi Eoe in a written response to Parliament, said of the 30 resolutions passed at the 2023 Governor’s conference, only 14 have been fully implemented."
+    },
+    {
+     "type": "p",
+     "text": "He added that among those included the following,"
+    },
+    {
+     "type": "ol",
+     "text": "Power to appointment Provincial Administrators from NEC to PEC;"
+    },
+    {
+     "type": "ol",
+     "text": "Provincial Health Authority (PHA) to jointly report to Provincial Administration and the National Department of Health;"
+    },
+    {
+     "type": "ol",
+     "text": "PSIP, DSIP, LLGSIP and Ward SIP made mandatory by law;"
+    },
+    {
+     "type": "ol",
+     "text": "LLG Special Purpose Authorities (SPA) accountability and governance processes strengthened (removal of board members being signatories to SPA accounts and constitutions standardized);"
+    },
+    {
+     "type": "ol",
+     "text": "Clear demarcation of functional responsibilities between levels of government and DDAs;"
+    },
+    {
+     "type": "ol",
+     "text": "LLG Elections to be conducted 30 months after the National General;"
+    },
+    {
+     "type": "ol",
+     "text": "Election Provincial and district roads transferred to provinces."
+    },
+    {
+     "type": "p",
+     "text": "Minister Eoe said three decades of evidence suggests that the current system is not delivering on those obligations. The message from across the country from governors, provincial administrates is LLG business House and communities is clear. “There is a strong call to review and strengthen the provincial government system in order to improve governance and service delivery,” Minister Eoe said."
+    }
+   ]
+  },
+  {
+   "id": "sangara-station",
+   "order": 10,
+   "title": "Popondetta District Develops Sangara Station as Its HQ",
+   "section": "Governance",
+   "pages": [
+    5
+   ],
+   "kind": "story",
+   "featured": false,
+   "summary": "POPONDETTA District Development Authority has approved K16 million for its headquarters to be built at the Sangara Station.",
+   "minutes": 2,
+   "locations": [
+    "Sangara",
+    "Popondetta"
+   ],
+   "topics": [
+    "Governance",
+    "Health"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/sangara-station-1.jpg",
+     "w": 670,
+     "h": 592,
+     "caption": "Sangara roads leading to the station through the oil palm blocks, which will now be the Popondetta District Headquarters as announced by local MP and Minister for Administrative Services Hon. Richard Masere."
+    }
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "POPONDETTA District Development Authority has approved K16 million for its headquarters to be built at the Sangara Station."
+    },
+    {
+     "type": "p",
+     "text": "Local MP and Minister for Administrative Services, Hon. Richard Masere made this announcement recently confirming that the DDA had decided for Sangara to be its headquarters."
+    },
+    {
+     "type": "p",
+     "text": "The district is quite new as a result of the split of Ijivitari electorate upon which Popondetta Open was established about five years ago."
+    },
+    {
+     "type": "p",
+     "text": "Minister Masere said the Popondetta electorate has been temporarily operating out of other offices of the Oro Provincial Government."
+    },
+    {
+     "type": "p",
+     "text": "This year, they have decided to established their own offices in the electorate so that it can reach out to delivering the services."
+    },
+    {
+     "type": "p",
+     "text": "The first K2m was released to the contractor to start work on the mobilization of materials to put up the fence and another K5m will be released later this year."
+    },
+    {
+     "type": "p",
+     "text": "“Popondetta District has nominated Sangara station as our district headquarters and we are now starting the work.”"
+    },
+    {
+     "type": "p",
+     "text": "“This will enable the district to have an office space to operate from,” Masere said."
+    },
+    {
+     "type": "p",
+     "text": "He added that the new infrastructure buildings for the DDA office will include the office of the Member, District Administrator and the Local Level Government leaders."
+    },
+    {
+     "type": "p",
+     "text": "Minister Masere added that as local Member, the DDA has parked K1m aside from the budget for him to meet the commitments he makes along the cause of his duties."
+    },
+    {
+     "type": "p",
+     "text": "Meanwhile, Minister Masere also announced the commencement of work on the K6.5million Sangara health centre new maternity and outpatient ward."
+    },
+    {
+     "type": "p",
+     "text": "He explained that the new building has been approved by the Department of Health after 2 years of stringent checks ensuring the standard requirement was met."
+    },
+    {
+     "type": "p",
+     "text": "“Mobilization has started with the company already in Popondetta.”"
+    },
+    {
+     "type": "p",
+     "text": "“They are just waiting for the second batch of payment before they order the materials.”"
+    },
+    {
+     "type": "p",
+     "text": "“Once they get funding they will be ordering all the pre-fabricated materials out of China for the commencement of the project.”"
+    }
+   ]
+  },
+  {
+   "id": "budget-2026",
+   "order": 11,
+   "title": "Oro Provincial Government Unveils Ambitious 2026 Budget Focused on Reform and Development",
+   "section": "Governance",
+   "pages": [
+    6
+   ],
+   "kind": "story",
+   "featured": false,
+   "summary": "IN A historic budget presentation marked by confidence and commitment, the Oro Provincial Government has announced its 2026 budget totaling K197 million, a financial blueprint designed to elevate the province through…",
+   "minutes": 3,
+   "locations": [
+    "Province-wide",
+    "Kokoda"
+   ],
+   "topics": [
+    "Budget & Finance",
+    "Governance",
+    "Education",
+    "Health"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/budget-2026-1.jpg",
+     "w": 1400,
+     "h": 1014,
+     "caption": "An aerial view of the ‘Horukari Bande’ during the soft launch event."
+    }
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "IN A historic budget presentation marked by confidence and commitment, the Oro Provincial Government has announced its 2026 budget totaling K197 million, a financial blueprint designed to elevate the province through robust reform, infrastructure investment, and essential public services."
+    },
+    {
+     "type": "p",
+     "text": "Delivering the budget speech on behalf of the Governor, the chairman of the budget committee, Mr. Sheldon Deilala addressed the assembled distinguished leaders and members of the public, emphasizing that this was not just another budget sittng but a declaration of Oro’s determination for development. He pointed to the new Provincial Assembly building, costing K18 million, as a symbol of governance and accountability—a facility built not for comfort but for the people."
+    },
+    {
+     "type": "p",
+     "text": "Reflecting on the significant challenges faced since taking office in 2012, Mr. Deilala recounted the stagnant internal revenue of K900,000 over five years. “We inherited not a palace but problems, yet we chose action over complaint,” he stated, noting that through disciplined fiscal management, the province has witnessed internal revenue growth to over K8 million. He attributed this transformation to leadership, reform, and unyielding political will."
+    },
+    {
+     "type": "p",
+     "text": "Central to the 2026 budget is a commitment to protect public funds and ensure their effective use. Chairman Deilala announced substantial reforms in financial management, including the migration of payroll systems to enhance transparency and combat inefficiencies. “The kina must work for Oro,” he declared, emphasizing that funds will now be directed towards practical outcomes rather than administrative waste."
+    },
+    {
+     "type": "p",
+     "text": "The budget includes strategic reallocations to tackle underperforming divisions, promoting accountability across the provincial administration. “Oro will not be a dumping ground for inefficiency. Oro will be a model of reform,” he asserted, outlining plans to recruit qualified personnel aligned with national reform initiatives."
+    },
+    {
+     "type": "p",
+     "text": "Major infrastructure initiatives are also at the forefront, with K50 million secured for sealing the Kokoda Road in partnership with the Australian Government, along with funding for other critical projects such as the Northern Highway and various local roads. “These are projects, not dreams,” he asserted, highlighting the tangible progress already made in the province."
+    },
+    {
+     "type": "p",
+     "text": "In a strong hold on law and order, the budget allocates K3 million from Oil Palm levies and K2 million from PSIP to enhance security services, reflecting the government’s priority to restore safety and stability. Health services have also seen significant improvement, with Oro advancing from 21st to 9th place in health service delivery, and further investments pledged by the National Government."
+    },
+    {
+     "type": "p",
+     "text": "Education reform is set to continue as the province establishes a new Teachers College and revamps the Provincial Education Act to enhance the Board’s independence. The commitment to education is evident, with over K1 million annually dedicated to supporting families access tertiary studies."
+    },
+    {
+     "type": "p",
+     "text": "The OPG welcomes constructive criticism and invited all stakeholders to engage in the collective effort for Oro’s progress. “Do not stand at the roadside and shout while others carry the load. Join us. Help us,” he encouraged, reinforcing the message that development is a shared responsibility."
+    },
+    {
+     "type": "p",
+     "text": "As the budget was introduced, chairman Deilala called for unity among assembly members to pursue reform and accountability for the province’s future. “Let history record that in 2026, this assembly stood united for progress,” he concluded, leaving a resounding message of hope and determination."
+    },
+    {
+     "type": "p",
+     "text": "The Oro Provincial Government’s 2026 budget stands not just as a financial plan but as a reaffirmation of its commitment to the people, promising a future strengthened by infrastructure, health, education, and security, ensuring every citizen can thrive in a reformed and accountable governance framework."
+    }
+   ]
+  },
+  {
+   "id": "llg-presidents",
+   "order": 12,
+   "title": "Presidents of Northern Provincial Local-Level Governments",
+   "section": "Governance",
+   "pages": [
+    7
+   ],
+   "kind": "photos",
+   "featured": false,
+   "minutes": 1,
+   "locations": [
+    "Tufi",
+    "Afore",
+    "Safia",
+    "Popondetta",
+    "Oro Bay",
+    "Sangara",
+    "Higaturu",
+    "Kokoda",
+    "Tamata",
+    "Kira"
+   ],
+   "topics": [
+    "Governance",
+    "People"
+   ],
+   "blocks": [
+    {
+     "type": "gallery",
+     "title": null,
+     "images": [
+      {
+       "src": "img/issue-01/llg-presidents-1.jpg",
+       "w": 198,
+       "h": 252,
+       "caption": "ROBIN MANUAI SAFITOA · President, Tufi LLG, · Ward: 10 | Village: Sinifara · District: Ijivitari"
+      },
+      {
+       "src": "img/issue-01/llg-presidents-2.jpg",
+       "w": 198,
+       "h": 252,
+       "caption": "NATHANIEL KINIMO · President, Afore LLG · Ward: 9 | Village: Kiara · District: Ijivitari"
+      },
+      {
+       "src": "img/issue-01/llg-presidents-3.jpg",
+       "w": 197,
+       "h": 252,
+       "caption": "RONALD RIFU · President, Safia LLG · Ward: 3 Upper Musa · Village: Asanga Village · District: Ijivitari"
+      },
+      {
+       "src": "img/issue-01/llg-presidents-4.jpg",
+       "w": 197,
+       "h": 252,
+       "caption": "HENRY ORETA · Mayor, Popondetta Urban · Ward: 10 | Village: Kendata · District: Popondetta"
+      },
+      {
+       "src": "img/issue-01/llg-presidents-5.jpg",
+       "w": 197,
+       "h": 252,
+       "caption": "JOSEPH PERE · President Oro Bay East LLG · Ward: 4 Emo | Village: Reibai · District: Popondetta"
+      },
+      {
+       "src": "img/issue-01/llg-presidents-6.jpg",
+       "w": 197,
+       "h": 252,
+       "caption": "RAPHAEL KOWARI JUJEMBO · President Oro Bay North · Ward: 5 | Village: Kausada · District: Popondetta"
+      },
+      {
+       "src": "img/issue-01/llg-presidents-7.jpg",
+       "w": 197,
+       "h": 250,
+       "caption": "NICHOLAS UNGAJO · President, Sangara · Huhurundi LLG · Ward: | Village: New Warisota · District: Popondetta"
+      },
+      {
+       "src": "img/issue-01/llg-presidents-8.jpg",
+       "w": 197,
+       "h": 250,
+       "caption": "FELIX KAKI · President, Higaturu LLG · Ward: | Village: Kiorota · District: Sohe"
+      },
+      {
+       "src": "img/issue-01/llg-presidents-9.jpg",
+       "w": 198,
+       "h": 250,
+       "caption": "WILLIE KAGENI PINGA · President, Kokoda LLG · Ward: 18 | Village: Sairope · District: Sohe"
+      },
+      {
+       "src": "img/issue-01/llg-presidents-10.jpg",
+       "w": 198,
+       "h": 250,
+       "caption": "ROBERT TEMBARI · President, Tamata LLG · Ward: 4 | Village: Korisata · District: Sohe"
+      },
+      {
+       "src": "img/issue-01/llg-presidents-11.jpg",
+       "w": 198,
+       "h": 250,
+       "caption": "GREG PAKAO · President, Kira LLG, · Ward: 3 | Village: Upoporu · District: Sohe"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "horukari-bande",
+   "order": 13,
+   "title": "Oro Province Celebrates Soft Launch of New Provincial House of Assembly",
+   "section": "Governance",
+   "pages": [
+    7
+   ],
+   "kind": "story",
+   "featured": false,
+   "summary": "THE Governor of Oro Province, Gary Juffa, led a modest but significant event marking the soft launch of the newly constructed Horukari Bande, the Provincial House of Assembly. The building, which was destroyed in a fire…",
+   "minutes": 1,
+   "locations": [
+    "Popondetta"
+   ],
+   "topics": [
+    "Governance"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/horukari-bande-1.jpg",
+     "w": 877,
+     "h": 525,
+     "caption": "Aerial view of the soft launch of the ‘Horukari Bande’."
+    },
+    {
+     "src": "img/issue-01/horukari-bande-2.jpg",
+     "w": 868,
+     "h": 530,
+     "caption": "The first ever seating of The newly built Provincial Assembly House “Horukari Bande”."
+    }
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "THE Governor of Oro Province, Gary Juffa, led a modest but significant event marking the soft launch of the newly constructed Horukari Bande, the Provincial House of Assembly. The building, which was destroyed in a fire in 2009, has now been rebuilt with funds allocated from oil-palm shares returned to the province after extensive negotiations."
+    },
+    {
+     "type": "p",
+     "text": "During the ceremony, Governor Juffa welcomed the newly elected council presidents, emphasizing that the Horukari Bande is a space for representatives to gather, debate, and discuss pressing issues concerning Oro Province. He noted that the development of the province is a gradual journey, one that requires commitment and collaboration among all citizens."
+    },
+    {
+     "type": "p",
+     "text": "The Governor called for vigilance in managing the province’s natural resources, acknowledging both local and external forces interested in exploiting them. He underscored the importance of mutual respect among citizens and development partners in pursuing the province’s future prosperity."
+    },
+    {
+     "type": "p",
+     "text": "Highlighting the occasion’s significance, Juffa conveyed that the new assembly building symbolizes a broader effort to strengthen governance within the province. He announced that the assembly would facilitate discussions aimed at planning a better future for Oro and restoring effective public governance."
+    },
+    {
+     "type": "p",
+     "text": "In closing, Governor Juffa reiterated the necessity for ongoing commitment to rebuild Oro Province, likening the process to reconstructing a house that had once been burned down. The Horukari Bande stands not just as a physical structure, but as a testament to the potential of the collective effort of the people of Oro, signalling a renewed hope for the province’s development as it embarks on its journey into the next 50 years of nationhood business houses, senior citizens."
+    }
+   ]
+  },
+  {
+   "id": "medical-equipment",
+   "order": 14,
+   "title": "New Medical Equipment Strengthens Healthcare Delivery in Northern Province",
+   "section": "Infrastructure",
+   "pages": [
+    8
+   ],
+   "kind": "story",
+   "featured": false,
+   "summary": "THE Northern Provincial Health Authority received a timely boost of medical equipment from donor partners. The equipment consists of 100 beds, 56 mattresses, 5 wheelchairs, linen, sanitizing wipes and other accessories.",
+   "minutes": 2,
+   "locations": [
+    "Popondetta"
+   ],
+   "topics": [
+    "Health",
+    "Partnerships"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/medical-equipment-1.jpg",
+     "w": 725,
+     "h": 412
+    },
+    {
+     "src": "img/issue-01/medical-equipment-2.jpg",
+     "w": 722,
+     "h": 412
+    }
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "THE Northern Provincial Health Authority received a timely boost of medical equipment from donor partners. The equipment consists of 100 beds, 56 mattresses, 5 wheelchairs, linen, sanitizing wipes and other accessories."
+    },
+    {
+     "type": "p",
+     "text": "Thanks to a partnership between the Oro Provincial Government and donor partners in Australia, the Popondetta General Hospital and other health centres will now receive these much-needed equipment and supplies."
+    },
+    {
+     "type": "p",
+     "text": "While presenting the donated items to the CEO of the Northern Provincial Health Authority, Governor Juffa gave assurance of the continuation of this partnership in the future."
+    },
+    {
+     "type": "p",
+     "text": "“This assistance is from former Papua New Guineans who now reside in Australia. They have seen the need for medical equipment consumables in PNG, especially in our province and lent a helping hand. Everything as been checked and is in working condition. We are very fortunate to be beneficiaries and must be good custodians of these items that will go far in helping our people of Oro province.”"
+    },
+    {
+     "type": "p",
+     "text": "NPHA CEO Titus Stanley, was in high spirits when receiving the donated items."
+    },
+    {
+     "type": "p",
+     "text": "“We are very grateful to our friends in Australia for this kind gesture. It will go a long way in helping our health centres here in Oro. Many times, we turn patients away because of lack of beds, but this boost will definitely make certain our people receive the service they require.”"
+    },
+    {
+     "type": "p",
+     "text": "The Popondetta General Hospital recently begun a much-needed renovations, with areas such the adult outpatient, emergency department, newly constructed ‘Family Support Centre’ and the renovation and expansion of the morgue, to name a few."
+    },
+    {
+     "type": "p",
+     "text": "“Furthermore, we have acquired a new portable digital x-ray machine and a cardiotocograph machine to help monitor the fetus in the uterus for any signs of distress in pregnant women.” Governor Juffa added."
+    },
+    {
+     "type": "p",
+     "text": "We are committed to maintain this collaboration in addressing healthcare challenges. As renovations progress and new equipment is put to use, the people of Oro Province can look forward to improved medical care and support, particularly for vulnerable populations such as women and children."
+    }
+   ]
+  },
+  {
+   "id": "unre-maintenance",
+   "order": 15,
+   "title": "UNRE Receives Assistance for Maintenance to Aging Infrastructure",
+   "section": "Infrastructure",
+   "pages": [
+    8
+   ],
+   "kind": "story",
+   "featured": false,
+   "summary": "THE University of Natural Resources and Environment (UNRE) campus in Popondetta has been allocated K9.5 million for the maintenance and refurbishment of its aging infrastructure.",
+   "minutes": 2,
+   "locations": [
+    "Oro Campus (UNRE)",
+    "Popondetta",
+    "Inonda",
+    "Bareji",
+    "Sorovi"
+   ],
+   "topics": [
+    "Education",
+    "Housing",
+    "Agriculture"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/unre-maintenance-1.jpg",
+     "w": 1400,
+     "h": 1017,
+     "caption": "University of Natural Resources and Environment Oro Campus which has aging infrastructure built during the colonial times and needed much refurbishment, thanks to the Popondetta District who has stepped in to fund the renovation of these buildings."
+    },
+    {
+     "src": "img/issue-01/unre-maintenance-2.jpg",
+     "w": 705,
+     "h": 380
+    },
+    {
+     "src": "img/issue-01/unre-maintenance-3.jpg",
+     "w": 708,
+     "h": 380
+    }
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "THE University of Natural Resources and Environment (UNRE) campus in Popondetta has been allocated K9.5 million for the maintenance and refurbishment of its aging infrastructure."
+    },
+    {
+     "type": "p",
+     "text": "Member for Popondetta District and Minister for Administrative Services Hon. Richard Masere announced this recently."
+    },
+    {
+     "type": "p",
+     "text": "Minister Masere said funding has already been budgeted and work is expected to commence soon."
+    },
+    {
+     "type": "p",
+     "text": "He said under the Education sector, National Gaming Control Board would be funding K1.5m to build four-in-one classrooms for five primary schools including Buna, Resurrection, Popondetta primary, Eroro, Higaturu and COC Church primary school."
+    },
+    {
+     "type": "p",
+     "text": "Masere added that there is also money allocated for 4-in one duplex for teachers houses at Inonda Seventh Day Adventist High School."
+    },
+    {
+     "type": "p",
+     "text": "He said Bareji high school has also been allocated K350,000 for renovations."
+    },
+    {
+     "type": "p",
+     "text": "The total funding would be K700,000 to complete all work by the start of the year, Minister Masere said."
+    },
+    {
+     "type": "p",
+     "text": "Meanwhile, under the other sectors including agriculture, fisheries and forestry, the district has invested about K2.5m for the purchase of boats, fishing nets, piggery fencing, cocoa, timber, rice farming training and sawmills."
+    },
+    {
+     "type": "p",
+     "text": "“One of the other programs is community transport with which eight trucks were delivered last year.”"
+    },
+    {
+     "type": "p",
+     "text": "“This year we are delivering 20 units, 10 trucks and 10 15-seater buses to support the communities.”"
+    },
+    {
+     "type": "p",
+     "text": "Another project that the district is working on delivering in partnership with National Housing Commission is the release of Sorovi block land titles to 261 block holders."
+    },
+    {
+     "type": "p",
+     "text": "Minister Masere said for the town home give away scheme under the NHC, 155 titles would be given to home owners in Popondetta."
+    },
+    {
+     "type": "p",
+     "text": "“Balancing in between with the limited money we can make to support the district to meet all our requirements.”"
+    },
+    {
+     "type": "p",
+     "text": "“We are hoping to do all that to ensure that we support our people.”"
+    },
+    {
+     "type": "p",
+     "text": "“These are the programs that were running through last year and continuing this year.”"
+    }
+   ]
+  },
+  {
+   "id": "biru-self-reliance",
+   "order": 16,
+   "title": "Biru Sets the Standard for Self Reliance in Northern",
+   "section": "Infrastructure",
+   "pages": [
+    9
+   ],
+   "kind": "story",
+   "featured": false,
+   "summary": "BIRU Correctional Institution is leading the way for government institutions in Northern by initiating the construction of its own barracks.",
+   "minutes": 3,
+   "locations": [
+    "Biru"
+   ],
+   "topics": [
+    "Law & Order",
+    "Housing"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/biru-self-reliance-1.jpg",
+     "w": 1095,
+     "h": 447,
+     "caption": "Renovation work on the barracks at Biru Correctional Service Institute outside Popondetta to cater for the probationary officers recently recruited."
+    },
+    {
+     "src": "img/issue-01/biru-self-reliance-2.jpg",
+     "w": 345,
+     "h": 342
+    },
+    {
+     "src": "img/issue-01/biru-self-reliance-3.jpg",
+     "w": 720,
+     "h": 342
+    },
+    {
+     "src": "img/issue-01/biru-self-reliance-4.jpg",
+     "w": 350,
+     "h": 535
+    }
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "BIRU Correctional Institution is leading the way for government institutions in Northern by initiating the construction of its own barracks."
+    },
+    {
+     "type": "p",
+     "text": "Jail Commander, Chief Inspector Samuel Kiap said the new K65,000 barracks is now the home of seven new probationary officers who were recruited in November last year."
+    },
+    {
+     "type": "p",
+     "text": "Mr Kiap added that the staff ceiling for Biru CI is 65 but currently there are 47. Without the completion of the barracks, they would not have received the new officers."
+    },
+    {
+     "type": "p",
+     "text": "He said out of the funding they received from Correctional Service headquarters for the Independence celebrations last year, they used K10,000 together with the money raised from their cocoa project and materials provided by a local MP, the project was completed."
+    },
+    {
+     "type": "p",
+     "text": "Additional funding support came from CS headquarters for the electrical work, valued at K10,000."
+    },
+    {
+     "type": "p",
+     "text": "“The successful completion of this barracks is more than a construction achievement; it is a testament of who we are.”"
+    },
+    {
+     "type": "p",
+     "text": "“It reflects the spirit of self-reliance, discipline, and unity that defines Biru Correctional Institution. With minimal resources but maximum commitment, integrity and prudent financial management, we have demonstrated that development is possible when vision meets action.”"
+    },
+    {
+     "type": "p",
+     "text": "“This is only the beginning Biru CI will continue to chart a path of innovation, responsible management, and rehabilitation-driven development."
+    },
+    {
+     "type": "p",
+     "text": "“The foundations we have laid today, will support many more success stories in the years ahead.”"
+    },
+    {
+     "type": "p",
+     "text": "Mr Kiap who was the commanding officer since June 21st 2024, has big plans for Biru CI."
+    },
+    {
+     "type": "p",
+     "text": "In January 20, 2022 he was on promotional transfer as manager operations when the former commander Superintendent Teddy Biaga retired."
+    },
+    {
+     "type": "p",
+     "text": "“This project reflects what rehabilitation truly means, restoring not only infrastructure, but human potential for better reintegration."
+    },
+    {
+     "type": "p",
+     "text": "“Our economy is struggling, and government resources are stretched thin and if we expect Correctional Service Headquarters or Provincial Government and DDA’s to assist us, we might not get the most needed help on time."
+    },
+    {
+     "type": "p",
+     "text": "“I strongly believe that if we want change, we must be the change. If we want progress, we must innovate."
+    },
+    {
+     "type": "p",
+     "text": "“If we want development, we must work with what we have; using little resources, our minds, our hands, and our collective effort to build something better for us and the generation to come.”"
+    },
+    {
+     "type": "p",
+     "text": "“We need is a shift in mindset, a commitment to doing what is right even when no one is watching. We must empower capable people, value professionalism, and reward hard work.”"
+    },
+    {
+     "type": "p",
+     "text": "“Change begins with each of us: in how we think, how we act, and how we lead. Only then can we create a future that is worthy of our children.”"
+    },
+    {
+     "type": "p",
+     "text": "Meanwhile, Mr Kiap said work is underway to renovate the clinic with funding assistance of K50,000 from New Zealand grants."
+    },
+    {
+     "type": "p",
+     "text": "Among the many projects that he wants to see developed for Biru is the staff housing."
+    },
+    {
+     "type": "p",
+     "text": "“I want to see staff houses renovated and water fully restored to each house.”"
+    },
+    {
+     "type": "p",
+     "text": "“Their welfare is important, as this will directly determine efforts put in and outcomes achieved.”"
+    },
+    {
+     "type": "p",
+     "text": "Mr Kiap added that Biru is in dire need for the reconstruction of its fence and a genset to address continuous blackouts as well as maintenance for detainees’ cells."
+    }
+   ]
+  },
+  {
+   "id": "kikiri-road",
+   "order": 17,
+   "title": "Kikiri Road in Popondetta District to Be Sealed",
+   "section": "Infrastructure",
+   "pages": [
+    9
+   ],
+   "kind": "story",
+   "featured": false,
+   "summary": "THE long awaited sealing of Kikiri road on the coast of Northern will now take place, co-funded by the national government and Popondetta District Development Authority (DDA).",
+   "minutes": 2,
+   "locations": [
+    "Kikiri",
+    "Gona",
+    "Popondetta",
+    "Bareji",
+    "Safia",
+    "Pongani"
+   ],
+   "topics": [
+    "Roads & Bridges"
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "THE long awaited sealing of Kikiri road on the coast of Northern will now take place, co-funded by the national government and Popondetta District Development Authority (DDA)."
+    },
+    {
+     "type": "p",
+     "text": "Popondetta District Local Member and Minister for Administrative Services Hon. Richard Masere confirmed the road project would cost K15 million to be jointly funded by the National Government (K10m) and DDA (K5)."
+    },
+    {
+     "type": "p",
+     "text": "Minister Masere acknowledged the government through the Department of Works and Highways for allocating the funds for this important road."
+    },
+    {
+     "type": "p",
+     "text": "This is a key road that linked the coastal villages of Gona to Popondetta often used by most travelers from the Northern coast and Lae by boat when they converged at Kikiri Beach for an onward journey to town."
+    },
+    {
+     "type": "p",
+     "text": "“The contractor is ready to move, as soon as the district pays him the first K5m, he will start the job.”"
+    },
+    {
+     "type": "p",
+     "text": "Meanwhile, the Popondetta District has also allocated K4m for the Bareji – Moreguina road which links Northern to Central province."
+    },
+    {
+     "type": "p",
+     "text": "Minister Masere said as part of the Connect PNG program, the road will be constructed from Bareji through to Moreguina in Central."
+    },
+    {
+     "type": "p",
+     "text": "He added that since the road is within both Popondetta and Ijivitari districts, the construction will commence from Bareji onwards to Safia in the Musa area."
+    },
+    {
+     "type": "p",
+     "text": "“Then Ijivitari District will take it in from there to Moreguina in Abau District.”"
+    },
+    {
+     "type": "p",
+     "text": "“This is an important work for the highway which will start from Bareji to Moreguina.”"
+    },
+    {
+     "type": "p",
+     "text": "“Once that road is completed under National Government Connect PNG, they will take it onboard and put permanent bridges and seal to the roads.”"
+    },
+    {
+     "type": "p",
+     "text": "“We are hoping that work starts in 2027 and by then the two districts would have completed their part.”"
+    },
+    {
+     "type": "p",
+     "text": "Minister Masere also announced that another K6m has been allocated to Pongani Bridge, which was washed away during Cyclone Guba nine years ago."
+    },
+    {
+     "type": "p",
+     "text": "He further stated that this bridge was an important link between Popondetta and Ijivitari districts and had been overlooked since the disaster."
+    },
+    {
+     "type": "p",
+     "text": "“We have secured a bridge from the Works Department which will be used to build the bridge during the time of the construction bringing the total cost of the project to about K8m,” Minister Masere said."
+    }
+   ]
+  },
+  {
+   "id": "kokoda-college",
+   "order": 18,
+   "title": "Kokoda College Proving Successful with More Graduates",
+   "section": "Education",
+   "pages": [
+    10
+   ],
+   "kind": "story",
+   "featured": false,
+   "summary": "THE recent graduation of 120 students from the Kokoda Flexible Open and Distance Education (FODE) College is a success story for the people of Oro.",
+   "minutes": 3,
+   "locations": [
+    "Kokoda",
+    "Koukou"
+   ],
+   "topics": [
+    "Education"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/kokoda-college-1.jpg",
+     "w": 1400,
+     "h": 647,
+     "caption": "Graduating students and staff of the Kokoda FODE College together with Northern Governor Hon. Gary Juffa posing for a group photo after the recent graduation."
+    }
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "THE recent graduation of 120 students from the Kokoda Flexible Open and Distance Education (FODE) College is a success story for the people of Oro."
+    },
+    {
+     "type": "p",
+     "text": "The college was established to honor the special relationship forged during the World War II between Australian soldiers and the PNG people, particularly the “Fuzzy Wuzzy Angel” who supported wounded Australians along the Kokoda Track."
+    },
+    {
+     "type": "p",
+     "text": "A group of Australian World War 2 veterans including Dr Genevieve Nelson and Patrick Lindsay initiated the Kokoda Track Foundation (KTF) on ANZAC Day on April 25, 2003 to give back to the people of Papua New Guinea."
+    },
+    {
+     "type": "p",
+     "text": "Founded in 2003, KTF aims to honor the legacy of the Kokoda Track and provide educational opportunities for students, especially in areas where access to education is limited."
+    },
+    {
+     "type": "p",
+     "text": "Located in Koukou village at the end of the Kokoda Track, the college offers grade 9 to 12 studies to 250 students each year from as far as Efogi, Alola in Kokoda and other parts of the province."
+    },
+    {
+     "type": "p",
+     "text": "The KTF Kokoda FODE College is recognized by the Oro Division of Education and accredited by PNG FODE."
+    },
+    {
+     "type": "p",
+     "text": "The first graduation of Kokoda College was held in November 2015, since then the college has proved to be a success for the people of Northern and PNG."
+    },
+    {
+     "type": "p",
+     "text": "Principal Mr. Stainless Bill said the purpose of the KTF was to support education in remote communities, particularly in Papua New Guinea."
+    },
+    {
+     "type": "p",
+     "text": "He added that the foundation focuses on delivering practical, lasting change by partnering with local leaders and communities to enhance access to quality educational particularly in underserved regions."
+    },
+    {
+     "type": "p",
+     "text": "“The college provides a pathway for those wishing to complete grade 12 or upgrade either exam results in order purse tertiary studies.”"
+    },
+    {
+     "type": "p",
+     "text": "“After graduation, students with higher Grade Point Average (GPA) who have their career paths in education and health are selected to higher learning institutions.”"
+    },
+    {
+     "type": "p",
+     "text": "Mr Bill said KTF provides scholarships to students for secondary education as well as tertiary institutions."
+    },
+    {
+     "type": "p",
+     "text": "He explained that these are scholarships offered at Modowa Higher Institution, St Margaret’s Community Health Workers college in Popondetta and St Mary’s Teachers college in Port Moresby."
+    },
+    {
+     "type": "p",
+     "text": "KTF is currently supporting four students, Anna Yaga, Wari Pondo, Emmanuel Kerahu and Cornelius Pondo from the Kokoda area with scholarships at Sacred Heart Teachers College in Port Moresby who will enter their final year of diploma in primary teaching this year."
+    },
+    {
+     "type": "p",
+     "text": "The Bisset Medal Scholarship is named in honour of the Bisset Brother who fought in the Kokoda Campaign in 1942 and is offered by KTF."
+    },
+    {
+     "type": "p",
+     "text": "The scholarships that are offered at the Kokoda College include, Modawa Higher Institute (4), St Maragret CHW College (5), St Mary’s Techers’College (4) and 2 Bisset Medal Scholarships for any tertiary institutions in the country."
+    },
+    {
+     "type": "p",
+     "text": "The college has a staff of four, principal, deputy principal and two lecturers. They look forward to increasing the number of students’ enrolment this year."
+    },
+    {
+     "type": "p",
+     "text": "“We emphasized more on education and health career pathways so after tertiary education or colleges, student can return to their villages and change lives in their communities.”"
+    },
+    {
+     "type": "p",
+     "text": "Mr Bill said they have plans to expand the program to Tufi and Afore districts by later this year."
+    },
+    {
+     "type": "gallery",
+     "title": null,
+     "images": [
+      {
+       "src": "img/issue-01/kokoda-college-2.jpg",
+       "w": 378,
+       "h": 338,
+       "caption": "Northern Governor Gary Juffa officiating at the graduation of the Kokoda FODE College recently."
+      },
+      {
+       "src": "img/issue-01/kokoda-college-3.jpg",
+       "w": 378,
+       "h": 338
+      },
+      {
+       "src": "img/issue-01/kokoda-college-4.jpg",
+       "w": 187,
+       "h": 335
+      },
+      {
+       "src": "img/issue-01/kokoda-college-5.jpg",
+       "w": 375,
+       "h": 338
+      },
+      {
+       "src": "img/issue-01/kokoda-college-6.jpg",
+       "w": 377,
+       "h": 338
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "china-destiny",
+   "order": 19,
+   "title": "Popondetta District's China Destiny Program Gains Popularity",
+   "section": "Education",
+   "pages": [
+    11
+   ],
+   "kind": "story",
+   "featured": false,
+   "summary": "NINE Oro students are currently undergoing studies overseas under the China Destiny Program initiated by the Popondetta District Development Authority.",
+   "minutes": 2,
+   "locations": [
+    "Popondetta"
+   ],
+   "topics": [
+    "Education",
+    "Youth"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/china-destiny-1.jpg",
+     "w": 1095,
+     "h": 440,
+     "caption": "Nine of our students before their departure for studies under the Destiny China Scholarship Program."
+    }
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "NINE Oro students are currently undergoing studies overseas under the China Destiny Program initiated by the Popondetta District Development Authority."
+    },
+    {
+     "type": "p",
+     "text": "This is the first in Northern under this program where the Popondetta District has fully funded the students who were being given a second chance in their education career path after being unsuccessful of a placing in tertiary intuitions throughout the country."
+    },
+    {
+     "type": "p",
+     "text": "Local MP and Minister for Administrative Services Hon. Richard Masere said it was a new initiative that was proving to be a success."
+    },
+    {
+     "type": "p",
+     "text": "“The students are doing well and they are happy with this program. There were a total of 10 students but one returned home.”"
+    },
+    {
+     "type": "p",
+     "text": "“I’m excited about that program because two students are studying artificial intelligence which is the future of world. Two things will change the world, artificial intelligence and robotics.”"
+    },
+    {
+     "type": "p",
+     "text": "Minister Masere said another 10 students will follow shortly. They are awaiting the process with the respective universities."
+    },
+    {
+     "type": "p",
+     "text": "“Every year we put K600,000 so this year we will continue to assist our tertiary students.”"
+    },
+    {
+     "type": "p",
+     "text": "“This year in our budget, we have put another K600,000 to send the next batch of 15 to 20 students to study in China under this program.”"
+    },
+    {
+     "type": "p",
+     "text": "“We will be utilizing our talents in Oro, if they don’t get any placing in Universities even if their marks are good, we are giving them a second chance.”"
+    },
+    {
+     "type": "p",
+     "text": "“We want them to be exposed to the outside world so when they return they will have a broader knowledge of how the world is expanding in terms of development.”"
+    },
+    {
+     "type": "p",
+     "text": "Minister Masere explained that the fees are directly paid to the institutions."
+    },
+    {
+     "type": "p",
+     "text": "“There is a criterial required to qualify for this program whereby the students must live in the province and either them or their parents are eligible voters of the district."
+    },
+    {
+     "type": "p",
+     "text": "Meanwhile, Popondetta District working towards signing a Memorandum of Understanding with a university in India for a similar program."
+    },
+    {
+     "type": "p",
+     "text": "Minister Masere said this is a program that will be fully met by the university with some funding from the district."
+    }
+   ]
+  },
+  {
+   "id": "chris-soka-oisca",
+   "order": 20,
+   "title": "Planting Positive Seeds: Oro's Chris Soka Appointed OISCA Trainer",
+   "section": "Education",
+   "pages": [
+    11
+   ],
+   "kind": "story",
+   "featured": false,
+   "summary": "CHRIS Soka, a beneficiary of the Oro Provincial Government’s Tertiary Students Scholarship Program, was granted the opportunity to study in Japan under the Organisation for Industrial, Spiritual and Cultural Advancement…",
+   "minutes": 2,
+   "locations": [
+    "Arehe"
+   ],
+   "topics": [
+    "Agriculture",
+    "Environment",
+    "Education",
+    "People"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/chris-soka-oisca-1.jpg",
+     "w": 930,
+     "h": 527,
+     "caption": "Governor Juffa (left) and staff visit Chris Soka (centre) for the project inspection."
+    },
+    {
+     "src": "img/issue-01/chris-soka-oisca-2.jpg",
+     "w": 576,
+     "h": 645
+    },
+    {
+     "src": "img/issue-01/chris-soka-oisca-3.jpg",
+     "w": 443,
+     "h": 530
+    }
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "CHRIS Soka, a beneficiary of the Oro Provincial Government’s Tertiary Students Scholarship Program, was granted the opportunity to study in Japan under the Organisation for Industrial, Spiritual and Cultural Advancement (OISCA)."
+    },
+    {
+     "type": "p",
+     "text": "In Japan, Chris studied Integrated Farming Systems, which focus on eco-friendly agriculture through organic farming techniques. After completing his training from 2015 to 2016, he returned to Oro Province in 2017. Upon his return, Chris transformed an area of grassland into a forest using seedlings from his tree nursery. He also engaged communities, individuals, and schools by distributing tree seedlings, encouraging students and teachers to participate in annual tree planting initiatives on World Environment Day. His efforts were highlighted by the NBC news team during these events."
+    },
+    {
+     "type": "p",
+     "text": "Mr. Soka’s individual endeavours caught the attention of Oro Governor, Hon. Gary Juffa. Impressed by his work, Governor Juffa appointed Chris as an agent of change in the province, pledging the support of the Oro Provincial Government (OPG) to his organization. This recognition has fuelled Chris’s determination to expand his operations, focusing on delivering impactful solutions in agriculture and environmental conservation for the people of Oro Province."
+    },
+    {
+     "type": "p",
+     "text": "In November, 2025, Mr. Soka was contacted by OISCA International with an offer to become a trainer in Japan. This caught Mr. Soka by surprise as he wasn’t actively involved in training programs and was focused mostly on his sustainable agriculture activities in the province."
+    },
+    {
+     "type": "p",
+     "text": "When asked why this was the case, Mr. Soka stated that he believes his work in eco-friendly agriculture and the converting of an entire grassland into a forest in Arehe, had caught the attention of OISCA."
+    },
+    {
+     "type": "p",
+     "text": "“We send regular reports of our activities in the province and the work we have undertaken in partnership with the provincial government. They (OISCA) also follow us closely on social media. I believe it was through this that I was handpicked to be a trainer in Japan.” Mr. Soka added."
+    }
+   ]
+  },
+  {
+   "id": "oro-rfl-digicel-cup",
+   "order": 21,
+   "title": "Oro RFL to Bid for Digicel Cup Competition",
+   "section": "Sports",
+   "pages": [
+    12
+   ],
+   "kind": "story",
+   "featured": false,
+   "summary": "Oro rugby league Association will this year be bidding for entry into the Digicel Cup competition in 2028.",
+   "minutes": 2,
+   "locations": [
+    "Popondetta",
+    "Ijivitari",
+    "Sauga",
+    "Hunjara"
+   ],
+   "topics": [
+    "Sports",
+    "Youth"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/oro-rfl-digicel-cup-1.jpg",
+     "w": 883,
+     "h": 342,
+     "caption": "M4M Bulldogs and Hypermart Royals senior mens teams."
+    },
+    {
+     "src": "img/issue-01/oro-rfl-digicel-cup-2.jpg",
+     "w": 467,
+     "h": 395,
+     "caption": "UNRE Bulls womens team."
+    },
+    {
+     "src": "img/issue-01/oro-rfl-digicel-cup-3.jpg",
+     "w": 398,
+     "h": 393,
+     "caption": "Hunjara and Sambogo Eels."
+    }
+   ],
+   "blocks": [
+    {
+     "type": "lede",
+     "text": "Oro rugby league Association will this year be bidding for entry into the Digicel Cup competition in 2028."
+    },
+    {
+     "type": "p",
+     "text": "President of the Oro Rugby League Mr Stephen Kila Pat announced this initiative adding that work has commenced on introducing four new rugby league competitions in the province to meet the entry requirement."
+    },
+    {
+     "type": "p",
+     "text": "Mr Kila Pat said Oro rugby league was the late inclusion to the PNG Rugby Football League and started its competition at the end of June, under the compliance requirements of PNGRL."
+    },
+    {
+     "type": "p",
+     "text": "A former rugby league player, technical official and coach, Mr Kila Pat was elected this year as administrator."
+    },
+    {
+     "type": "p",
+     "text": "He added that the competition is currently running under Oro Rugby league with four others being planned, Popondetta Country, Sauga and Hunjara."
+    },
+    {
+     "type": "p",
+     "text": "“We are looking at affiliating one competition from Binandere as the guideline to the bid.”"
+    },
+    {
+     "type": "p",
+     "text": "There are 9 clubs in the Oro rugby league competition, UNRE Bulls, Hypermart Royals, Sambogo Eels, Brother’s, SBS Phytons, HOP Tigers, M4M Bulldogs, Lamington Hawks and Hunjara."
+    },
+    {
+     "type": "p",
+     "text": "Mr Kila Pat said for the first time in Oro rugby league has introduced six women’s teams including UNRE BULLS, Sambogo Eels, Brother’s, M4M Bulldogs, Royals and Lamington Hawks, a foundation club of Popondetta rugby league."
+    },
+    {
+     "type": "p",
+     "text": "Senior men’s and women are now into the semi-finals. The major semi-finals will be held this weekend followed by the grand final next week."
+    },
+    {
+     "type": "p",
+     "text": "Oro rugby league was revived this year after 9 years of absence through the support of the Ijivitari District Member Hon. David Arore in consultation with Northern Governor Hon. Gary Juffa."
+    },
+    {
+     "type": "p",
+     "text": "Both leaders are keen to ensure that the code develops."
+    },
+    {
+     "type": "p",
+     "text": "Governor Juffa has commended the Oro Rugby League administration for their efforts into rebuilding the code this year."
+    },
+    {
+     "type": "p",
+     "text": "Mr Kila Pat said the biggest challenge is disciplinary matters which the administration is putting a tight control to address this issue."
+    },
+    {
+     "type": "p",
+     "text": "He acknowledged Ijivitari District for supporting Oro Rugby league with new sets of unforms for all the clubs."
+    },
+    {
+     "type": "p",
+     "text": "“After 9 years of inactive competition, we are grateful for Ijivitari District’s assistance with uniforms for our teams.”"
+    },
+    {
+     "type": "p",
+     "text": "“Sports is a tool to keep law and order out of the communities and Oro rugby league will go a long way in bringing youths together to participate in these competitions.”"
+    },
+    {
+     "type": "p",
+     "text": "“We are thankful that our leaders are behind this sporting code.”"
+    },
+    {
+     "type": "p",
+     "text": "Mr Kila Pat said, as a big supporter of school boys’ rugby, Governor Juffa wants to see an active competition in this division."
+    },
+    {
+     "type": "p",
+     "text": "He added that school boy’s competition will run next year with the hope that junior development pathway can be included in the PNGRL bid."
+    }
+   ]
+  },
+  {
+   "id": "reserve-training-notice",
+   "order": 22,
+   "title": "Notice: Reserve Training Program 2026 Short-list",
+   "section": "Notices",
+   "pages": [
+    12
+   ],
+   "kind": "notice",
+   "featured": false,
+   "summary": "RPNGC & Oro Provincial Government in partnership. Attention short-list candidates of 2024: all following personnel are to immediately report in person to the office of the Provincial Police Commander in Popondetta.",
+   "minutes": 1,
+   "locations": [
+    "Popondetta"
+   ],
+   "topics": [
+    "Law & Order",
+    "Notices"
+   ],
+   "images": [
+    {
+     "src": "img/issue-01/reserve-training-notice-1.jpg",
+     "w": 1444,
+     "h": 3464
+    }
+   ],
+   "blocks": [
+    {
+     "type": "p",
+     "text": "**RPNGC & Oro Provincial Government in partnership.** Attention short-list candidates of 2024: all following personnel are to immediately report in person to the office of the Provincial Police Commander in Popondetta."
+    },
+    {
+     "type": "p",
+     "text": "Report direct to **Provincial Training Officer Chief Sgt Noel Hosapa**. For more information call **7117 3237** (+675 71173237)."
+    },
+    {
+     "type": "p",
+     "text": "Be punctual, neat & disciplined. The full short-list appears in the notice below."
+    }
+   ]
+  }
+ ]
+}
