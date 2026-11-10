@@ -316,7 +316,11 @@ footer.foot .wrap { display: flex; justify-content: space-between; gap: 12px; fl
   const plural = (n, w) => `${n} ${w}${n === 1 ? "" : "s"}`;
   const pageList = p => !p || !p.length ? "" : (p.length === 1 ? `Page ${p[0]}` : `Pages ${p[0]}–${p[p.length - 1]}`);
 
+  // A packaged single-file edition embeds its data and photos in window.__NO_BUNDLE.
+  const BUNDLE = window.__NO_BUNDLE || null;
+  const asset = p => (BUNDLE && BUNDLE.assets[p]) || p;
   async function getJSON(url) {
+    if (BUNDLE && BUNDLE.data[url]) return BUNDLE.data[url];
     const r = await fetch(url);
     if (!r.ok) throw new Error(`${url}: ${r.status}`);
     return r.json();
@@ -343,7 +347,7 @@ footer.foot .wrap { display: flex; justify-content: space-between; gap: 12px; fl
     r.setProperty("--head-d", t.headDark || "#9eabff");
     r.setProperty("--accent-l", t.accent || "#1fa3dc");
     r.setProperty("--accent-d", t.accentDark || "#6ccff6");
-    $("#mast-img").src = `img/${issue.slug}/masthead.jpg`;
+    $("#mast-img").src = asset(`img/${issue.slug}/masthead.jpg`);
   }
   function chrome({ issue, showBadge, kicker, folio, nav }) {
     applyTheme(issue);
