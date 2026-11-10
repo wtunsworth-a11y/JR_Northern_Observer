@@ -11,7 +11,7 @@ ISSUE = {
     "trim": (21, 21, 815, 1112),
     "masthead": (51, 51, 676, 196),
     "theme": {"band": "#414143", "strip": "#f5c400", "head": "#1d6b2c", "headDark": "#8fd35a",
-              "accent": "#5aa832", "accentDark": "#8fd35a"},
+              "accent": "#5aa832", "accentDark": "#8fd35a", "mastInk": "#ffca08"},
     "articles": [
         {
             "id": "k6m-law-and-order",

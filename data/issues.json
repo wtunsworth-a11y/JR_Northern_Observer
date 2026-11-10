@@ -13,7 +13,8 @@
     "head": "#2b3990",
     "headDark": "#9eabff",
     "accent": "#1fa3dc",
-    "accentDark": "#6ccff6"
+    "accentDark": "#6ccff6",
+    "mastInk": "#ffffff"
    },
    "lead": {
     "id": "kokoda-sealed",
@@ -34,7 +35,8 @@
     "head": "#1d6b2c",
     "headDark": "#8fd35a",
     "accent": "#5aa832",
-    "accentDark": "#8fd35a"
+    "accentDark": "#8fd35a",
+    "mastInk": "#ffca08"
    },
    "lead": {
     "id": "k6m-law-and-order",

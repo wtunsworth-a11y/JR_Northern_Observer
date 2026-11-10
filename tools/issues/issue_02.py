@@ -10,7 +10,7 @@ ISSUE = {
     "pdf": "source/northern-observer-issue-02.pdf",
     "masthead": (30, 31, 650, 174),
     "theme": {"band": "#28408f", "strip": "#6ccff6", "head": "#2b3990", "headDark": "#9eabff",
-              "accent": "#1fa3dc", "accentDark": "#6ccff6"},
+              "accent": "#1fa3dc", "accentDark": "#6ccff6", "mastInk": "#ffffff"},
     # Shown on the issue page while status is "review". Remove items as they are fixed.
     "review_notes": [
         "Page 3: the Editor's Note and Governor's Address still contain placeholder text (“appropriate text…”). They are left out of the digital edition until the final copy is in.",
