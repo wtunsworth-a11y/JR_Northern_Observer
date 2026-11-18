@@ -350,6 +350,7 @@ footer.foot .wrap { display: flex; justify-content: space-between; gap: 12px; fl
     r.setProperty("--band", t.band || "#28408f");
     r.setProperty("--strip", t.strip || "#6ccff6");
     r.setProperty("--mast-ink", t.mastInk || "#ffffff");
+    $(".masthead .the").hidden = !!t.mastHasThe;  // newer mastheads print "The" in the artwork
     r.setProperty("--head-l", t.head || "#2b3990");
     r.setProperty("--head-d", t.headDark || "#9eabff");
     r.setProperty("--accent-l", t.accent || "#1fa3dc");
@@ -582,7 +583,7 @@ footer.foot .wrap { display: flex; justify-content: space-between; gap: 12px; fl
       <section><div class="block-head"><h2>Masthead</h2></div>
         <dl>${(c.masthead || []).map(m => `<dt>${esc(m.role)}</dt><dd>${m.name ? esc(m.name) : tbc}</dd>`).join("")}</dl></section>
       <section><div class="block-head"><h2>Contributors</h2></div>
-        <dl>${(c.contributors || []).map(m => `<dt>${esc(m.name)}${m.affiliation ? ` · ${esc(m.affiliation)}` : ""}</dt><dd>${esc(m.note || "")}</dd>`).join("")}</dl></section>
+        ${(c.contributors || []).length ? `<dl>${c.contributors.map(m => `<dt>${esc(m.name)}${m.affiliation ? ` · ${esc(m.affiliation)}` : ""}</dt><dd>${esc(m.note || "")}</dd>`).join("")}</dl>` : `<p class="muted">No stories in the current issues carry a byline.</p>`}</section>
       <section><div class="block-head"><h2>Issues</h2></div>
         <dl>${state.index.map(i => `<dt>Issue ${i.number}</dt><dd>${esc(i.title)} · ${i.status === "review" ? "In final review" : "Printed"}</dd>`).join("")}</dl></section>
       <p class="muted">${esc(c.digital || "")}</p>

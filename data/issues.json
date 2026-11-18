@@ -14,13 +14,14 @@
     "headDark": "#9eabff",
     "accent": "#1fa3dc",
     "accentDark": "#6ccff6",
-    "mastInk": "#ffffff"
+    "mastInk": "#ffffff",
+    "mastHasThe": true
    },
    "lead": {
     "id": "kokoda-sealed",
-    "title": "Kokoda Sealed!"
+    "title": "Kokoda Sealing Moves Ahead!"
    },
-   "articleCount": 21
+   "articleCount": 24
   },
   {
    "number": 1,
